@@ -143,11 +143,11 @@ p {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .btn-success:focus {
