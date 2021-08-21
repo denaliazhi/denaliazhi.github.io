@@ -35,35 +35,36 @@ body {
 }
 
 .wave {
+  font-size: 4rem;
   animation: wave 2.5s infinite;
-  transform-origin: 70% 70%;
+  transform-origin: 60% 60%;
   display: inline-block;
 }
 
 @keyframes wave {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-25deg);
   }
   10% {
-    transform: rotate(14deg);
+    transform: rotate(-5deg);
   }
   20% {
-    transform: rotate(-8deg);
+    transform: rotate(-25deg);
   }
   30% {
-    transform: rotate(14deg);
+    transform: rotate(-5deg);
   }
   40% {
-    transform: rotate(-4deg);
+    transform: rotate(-15deg);
   }
   50% {
-    transform: rotate(10deg);
+    transform: rotate(-5deg);
   }
   60% {
-    transform: rotate(0deg);
+    transform: rotate(-20deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-20deg);
   }
 }
 
@@ -97,8 +98,8 @@ body {
 h1,
 h2 {
   font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 1px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -142,7 +143,11 @@ p {
 }
 
 strong {
-  font-weight: 400;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .btn-success:focus {
@@ -188,6 +193,7 @@ a:active,
 a:focus {
   color: #70abb5;
   outline: none;
+  font-weight: bold;
 }
 
 * {
@@ -274,7 +280,7 @@ a:focus {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background: #bdc3c7;
+  background: rgb(36, 36, 36);
   border-color: transparent;
 }
 
@@ -296,7 +302,7 @@ path {
 #curved_text {
   font-family: rubik;
   font-size: 60%;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* ------ */
@@ -321,10 +327,6 @@ path {
 #home hr {
   width: 82px;
   margin-top: 32px;
-}
-
-#home_filter {
-  margin-top: 3rem;
 }
 
 .filter_btn {
@@ -355,10 +357,6 @@ path {
 /*---------------------------------------
    About section              
 -----------------------------------------*/
-
-#about_bold {
-  font-weight: bold;
-}
 
 #about-info {
   margin-top: 4rem;
@@ -472,7 +470,6 @@ a.cs50:visited {
 
 a.cs50:hover {
   color: #70abb5;
-  text-decoration: underline;
 }
 
 a.amenuveve:link {
@@ -487,7 +484,6 @@ a.amenuveve:visited {
 
 a.amenuveve:hover {
   color: #70abb5;
-  text-decoration: underline;
 }
 
 .video-responsive {
@@ -509,6 +505,13 @@ a.amenuveve:hover {
   font-weight: bold;
 }
 
+.project_title {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
+}
 .proj-overview {
   margin: 8rem;
   text-align: left;
