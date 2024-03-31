@@ -1,214 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Denalia Zhi</title>
 
-<title>Denalia Zhi</title>
+    <link href="images/logo.png" rel="icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-<link href="images/logo.png" rel="icon">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation section  -->
 
-<!-- Main css -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"
+            ><img src="images/logo.svg" class="logo"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="projects.html">projects</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/denaliazhi/"
+                class="fa fa-linkedin"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-</head>
-<body>
+    <!-- About Section -->
 
-<!-- Navigation section  -->
+    <section id="about">
+      <div class="container">
+        <div class="col-md-6 col-sm-12">
+          <img
+            src="images/Headshot.gif"
+            class="img-responsive"
+            alt="A self portrait"
+          />
+        </div>
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="col-md-offset-1 col-md-5 col-sm-12" id="about-info">
+          <p style="margin-bottom: 2rem">
+            I’m currently a <strong>data analyst</strong> at Bloomberg. My
+            coworkers also call me the <strong>office baker</strong>. Here are
+            some of their reviews:
+          </p>
+          <li>"QC'd the banana bread. 20/10."</li>
+          <li>"This is the best cookie I've had in 53 years."</li>
+          <li>"Fudging phenomenal."</li>
+          <p style="margin-top: 2rem">
+            My approach to work mirrors my approach to baking. I like to blend
+            analytical and creative methods to produce tasty results.
+          </p>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+
+      <!--
      <div class="container">
-
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <a href="index.html" class="navbar-brand"><img src="images/logo.svg" class="logo"></a>
+          <div class="col-md-4 col-sm-6" style="width: 150px;">
           </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">work</a></li>
-                    <li><a href="play.html">play</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="https://www.linkedin.com/in/denaliazhi/" class="fa fa-linkedin"></a></li>
+
+          <div class="col-md-4 col-sm-6" style="width: 400px; margin-left: 3rem; padding-left: 7rem; border-left: solid 1px black;">
+               <h3 class="section">Random Tidbits</h3>
+               <div class="section">
+                    <p><strong>&#127912 Favorite color</strong></p>
+                         <p>Sunset peach</p>
+               </div>
+               <div class="section">
+                    <p><strong>&#128161 Outlandish goal</strong></p>
+                         <p>Hike the entire Appalachian Trail</p>
+               </div>
+               <div class="section">
+                    <p><strong>&#9889 Hogwarts House</strong></p>
+                         <p>Hufflepuff</p>
+               </div>
+               <div class="section">
+                    <p><strong>TV Show</strong></p>
+                         <p>Parks and Rec <small style="font-size: 13px;">(aka The Office but better)</small></p>
+               </div>
+               <p class="section" style="font-size: 15px;">* My side hustle &#8594; <a href="https://instagram.com/bydenalia">&#127856</p>
                </ul>
           </div>
 
-  </div>
-</div>
+          <div class="col-md-4 col-sm-6" style="width: 50px;">
+          </div>
 
-<!-- Home Section -->
-
-<section id="home">
-     <div class="container">
-          <div class="row">
-               
-               <div class="col-md-12 col-sm-12">
-                    <h2>Hi, I'm Denalia </h2>
-                    <p>Welcome to my project corner.</p>
+          <div class="col-md-4 col-sm-6" style="width: 400px; margin-left: 3rem; padding-left: 7rem; border-left: solid 1px black;">
+               <h3 class="section">Learning path</h3>
+               <div class="section">
+                    <p><strong>Freshman fall</strong></p>
+                    <ul>
+                         <li>Dipped into Adobe suite (Digital Tools, OUART 823)</li>
+                         <li>Wrote "Hello World" in Python (Intro to Programming, TECH-UB 23)</li>
+                    </ul>
                </div>
-               <div class="col-md-12 col-sm-12" id="home_filter">
-                    <button class="filter_btn" id="data_btn" value="data">Data</button>
-                    <button class="filter_btn" id="design_btn" value="design">Design</button>
-                    <!--<button class="filter_btn" id="dabbles_btn" value="dabbles">Dabbles</button>-->
+               <div class="section">
+                    <p><strong>Freshman spring + summer</strong></p>
+                    <ul>
+                         <li>Learned how to make type look pretty (Design I, ART-UE 401)</li>
+                         <li>Redesigned a website (Amenuveve, summer internship)</li>
+                    </ul>
                </div>
-
+               <div class="section">
+                    <p><strong>Sophomore fall</strong></p>
+                    <ul>
+                         <li>Learned basic UX Principles via Coursera</li>
+                         <li>Built my first web application (Harvard CS50)</li>
+                    </ul>
+               </div>
+               <div class="section">
+                    <p><strong>Sophomore spring</strong></p>
+                    <ul>
+                         <li>Taking Data Driven Decision Making, involving R, JMP, and Tableau</li>
+                         <li>Taking Decision Models and Analytics, involving Excel</li>
+                    </ul>
+               </div>
           </div>
      </div>
-</section>
+-->
+    </section>
 
-<!-- Portfolio Section -->
+    <!-- Footer Section -->
 
-<section id="portfolio">
-     <div class="container">
+    <footer>
+      <div class="col-md-12 col-sm-12 text-center">
+        <p>
+          Let's chat
+          <a href="mailto:denaliazhi@gmail.com"
+            ><span class="bounce">&#129366</span> denaliazhi@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
 
-          <div class="data">
-               <div class="col-md-4 col-sm-6">
-                    <a href="https://github.com/denaliazhi/gender-equity-Tokyo_Olympics_2020">
-                         <div class="portfolio-thumb">
-                              <img src="images/olympics_cover.png" class="img-responsive" alt="Portfolio">
-                              <div class="portfolio-overlay">
-                                   <div class="portfolio-item">
-                                        <h3>Tokyo Olympics</h3>
-                                        <small>exploratory data analysis</small>
-                                   </div>
-                              </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
+    <!-- SCRIPTS -->
 
-          <div class="data">
-               <div class="col-md-4 col-sm-6">
-                    <a href="airbnb.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/airbnb_cover.png" class="img-responsive" alt="Portfolio">
-                              <div class="portfolio-overlay">
-                                   <div class="portfolio-item">
-                                        <h3>Airbnb</h3>
-                                        <small>machine learning</small>
-                                   </div>
-                              </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
-               
-          <div class="data">
-               <div class="col-md-4 col-sm-6">
-                    <a href="tableau.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/tableau_cover.png" class="img-responsive" alt="Portfolio">
-                              <div class="portfolio-overlay">
-                                   <div class="portfolio-item">
-                                        <h3>Tableau</h3>
-                                        <small>web scraping & data visualization</small>
-                                   </div>
-                              </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
-
-          <div class="data">
-               <div class="col-md-4 col-sm-6">
-                    <a href="wander.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/wander_cover.png" class="img-responsive" alt="Portfolio">
-                              <div class="portfolio-overlay">
-                                   <div class="portfolio-item">
-                                        <h3>Wander</h3>
-                                        <small>programming, web dev</small>
-                                   </div>
-                              </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
-
-          <div class="design">
-               <div class="col-md-4 col-sm-6">
-                    <a href="https://issuu.com/corporateaction/docs/the_call_2021/38">
-                         <div class="portfolio-thumb">
-                              <img src="images/call.png" class="img-responsive" alt="Portfolio">
-                              <div class="portfolio-overlay">
-                                   <div class="portfolio-item">
-                                        <h3>The Call</h3>
-                                        <small>writing, editorial design [coming soon]</small>
-                                   </div>
-                              </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
-
-          <div class="design">
-               <div class="col-md-4 col-sm-6">
-                    <a href="amenuveve.html">
-                         <div class="portfolio-thumb">
-                              <img src="images/amenuveve_cover.png" class="img-responsive" alt="Portfolio">
-                              <div class="portfolio-overlay">
-                                   <div class="portfolio-item">
-                                        <h3>Amenuveve</h3>
-                                        <small>web design</small>
-                                   </div>
-                              </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
-
-          <div class="design">
-               <div class="col-md-4 col-sm-6">
-                    <a href="amenuveve-catalogue.html">
-                         <div class="portfolio-thumb">
-                             <img src="images/amenuveve_catalogue.png" class="img-responsive" alt="Portfolio">
-                             <div class="portfolio-overlay">
-                                 <div class="portfolio-item">
-                                     <h3>Amenuveve</h3>
-                                     <small>catalogue, graphic design</small>
-                                 </div>
-                             </div>
-                         </div>
-                    </a>
-               </div>
-          </div>
-       
-     </div>
-</section>
-
-<!-- Footer Section -->
-
-<footer>
-     <div class="col-md-12 col-sm-12 text-center">
-          <p>Let's chat <a href="mailto:daz271@nyu.edu"><span class="bounce">&#9749</span> daz271@nyu.edu</a></p>
-     </div>
- </footer>
-
-<!-- SCRIPTS -->
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-     window.addEventListener("load", function () {
-          const loader = document.querySelector(".loader");
-          loader.className += " hidden";
-     });
-</script>
-<script src="js/filter.js"></script>
-
-</body>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+      });
+    </script>
+    <script src="js/filter.js"></script>
+  </body>
 </html>

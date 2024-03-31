@@ -129,11 +129,15 @@ h4 {
 
 p {
   color: rgb(61, 61, 61);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 3.5rem;
   letter-spacing: 0.2;
   font-family: "Poppins", sans-serif;
+}
+
+li {
+  font-size: 18px;
 }
 
 .section {
@@ -401,6 +405,10 @@ path {
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.img-responsive {
+  border-radius: 10px !important;
 }
 
 #portfolio .portfolio-thumb {
