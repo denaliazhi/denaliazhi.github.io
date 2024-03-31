@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Denalia Zhi | Wander</title>
+
+<link href="images/logo.png" rel="icon">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand"><img src="images/logo.svg" class="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="https://www.linkedin.com/in/denaliazhi/" class="fa fa-linkedin"></a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Project Section -->
+
+<section id="single-project">
+
+<div class=container>
+     <div class="col-md-offset-1 col-md-10 col-sm-12">
+          <h1 class="project_title">Wander</h1>
+          <p><a class="cs50" href="https://cs50.harvard.edu/certificates/3ab7f820-fed0-4d23-9b47-12ee1bfa689b">CS50</a> Final Project</p>
+
+          <div class="col-md-12 col-sm-12">
+               <img src="images/wander_cover.png" class="img-responsive" alt="Project cover photo">
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+               <p class="basic-info">Type</p>
+               <p>Programming, web dev</p>
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+               <p class="basic-info">Tools</p>
+               <p>Python, SQL, JS</p>
+          </div>
+
+          <div class="col-md-4 col-sm-4">
+               <p class="basic-info">Timespan</p>
+               <p>1 week, January 2021</p>
+          </div>
+
+          <div class="col-md-12 col-sm-12 text-center">
+               <hr>
+               <h4 class="proj-overview">Wander is a gamified fitness web app that translates real world steps into in-game travel. 
+                    Users set a city as their destination, walk (or run) to reach their goal, and collect a virtual souvenir for each trip completed.</h4>
+               <img src="images/wander_preview.png" class="img-responsive" alt="Final product preview">
+          </div>
+
+          <div class="col-md-12 col-sm-12 text-center">
+               <h3 class="proj-subtitle"> Process </h3>
+               <p class="proj-description"> This project was built using the Flask web framework within CS50's IDE. 
+                    For a given user, the app calls Strava's API to access their personal walking data, storing it into the SQL database. 
+                    The database manages information about their travel log, current flight, and souvenir collection. </p>
+               <p class="proj-description"> Various Python loops and conditional statements determine the content to be shown on each page. </p>
+          </div>
+
+          <div class="col-md-12 col-sm-12 text-center">
+               <img src="images/wander_code.png" class="img-responsive" alt="Code snippet">
+          </div>
+
+          <div class="col-md-12 col-sm-12">
+               <p class="proj-description"> As per the CS50 course guidelines and to prevent the duplication of my project by other students, 
+                    I have included only this code snippet as a demonstration of my programming knowledge. 
+                    If you would like access to the full version, please contact me at daz271@nyu.edu.</p>
+               <h3 class="proj-subtitle"> Summary </h3>
+               <p class="proj-description"> This project showcases my learnings from CS50, Harvard’s introductory computer science course, which I completed between November 2020 and January 2021.</p>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="video-responsive">
+               <iframe width="760" height="425" src="https://www.youtube.com/embed/7uawiY0eelo" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </div>
+
+     </div>
+</div>
+
+</section>
+
+<div class="footer_space"></div>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="col-md-12 col-sm-12 text-center">
+          <p>Let's chat <a href="mailto:denaliazhi@gmail.com"><span class="bounce">&#129366</span> denaliazhi@gmail.com</a></p>
+     </div>
+ </footer>
+ 
+ <!-- SCRIPTS -->
+ 
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+     window.addEventListener("load", function () {
+          const loader = document.querySelector(".loader");
+          loader.className += " hidden";
+     });
+ </script>
+ <script src="js/filter.js"></script>
+ 
+ </body>
+ </html>
