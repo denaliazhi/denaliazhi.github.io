@@ -29,6 +29,13 @@ body {
   transition: all linear 0.25s;
 }
 
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: rgb(var(--almostblack));
+}
+
 /* --- Custom animations --- */
 
 @keyframes bounce {
@@ -53,16 +60,6 @@ header {
 
 header img {
   width: 30px;
-}
-
-header a {
-  color: rgb(var(--almostblack));
-}
-
-header a,
-header a:active,
-header a:visited {
-  text-decoration: none;
 }
 
 header a:hover {
@@ -242,13 +239,14 @@ footer {
 /* --- About > Artifacts section --- */
 
 .container-artifacts {
-  margin-top: 2rem;
+  margin: 2rem 0 3rem;
   padding: 1rem;
 
   background-color: rgba(var(--almostblack), 0.05);
   border-radius: 0.7rem;
 
   display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -302,6 +300,28 @@ h2 span {
 .artifact-4 img:hover,
 .artifact-5 img:hover {
   transform: scale(200%);
+}
+
+/* --- Play > Projects section --- */
+
+.projects > p {
+  margin-bottom: 3rem;
+}
+
+.play .project-card p {
+  font-weight: 700;
+}
+.play > div > div:nth-of-type(1) > .project-card {
+  background-color: rgb(241, 241, 241);
+  color: rgb(var(--almostblack));
+}
+
+.play > div > div:nth-of-type(2) > .project-card {
+  background-color: rgb(176, 195, 175);
+}
+
+.play > div > div:nth-of-type(3) > .project-card {
+  background-color: rgb(178, 161, 141);
 }
 
 /* -- Adjustments for mobile -- */
