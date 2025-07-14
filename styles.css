@@ -11,10 +11,13 @@
 }
 
 body {
-  padding: 0 1rem;
   font-family: "Inter", Helvetica, sans-serif;
   text-align: center;
   color: var(--almostblack);
+}
+
+body > :not(header) {
+  padding: 0 2rem;
 }
 
 /* --- Custom animations --- */
@@ -28,7 +31,7 @@ body {
 /* --- Header --- */
 header,
 header div {
-  padding: 1rem 0;
+  padding: 1.5rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
