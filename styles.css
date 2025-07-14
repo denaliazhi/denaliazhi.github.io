@@ -55,6 +55,28 @@ header img {
   width: 30px;
 }
 
+header a {
+  color: rgb(var(--almostblack));
+}
+
+header a,
+header a:active,
+header a:visited {
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgb(var(--magenta));
+  font-weight: 700;
+}
+
+/* --- Footer --- */
+footer {
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: rgba(var(--almostblack), 0.6);
+}
+
 /* --- Home > Hero Section --- */
 .hero {
   text-align: left;
@@ -206,7 +228,7 @@ header img {
 }
 
 .projects > div > div:nth-of-type(1) > .project-card {
-  background-color: rgb(78, 106, 81);
+  background-color: rgb(81, 100, 84);
 }
 
 .projects > div > div:nth-of-type(2) > .project-card {
@@ -217,11 +239,60 @@ header img {
   background-color: rgb(234, 120, 105);
 }
 
-/* --- Footer --- */
-footer {
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: rgba(var(--almostblack), 0.6);
+/* --- About > Artifacts section --- */
+
+h2 span {
+  font-weight: normal;
+}
+.container-artifacts {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(var(--almostblack), 0.05);
+  border-radius: 0.7rem;
+  font-size: 0.7rem;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.container-artifacts p {
+  margin-top: 0.4rem;
+}
+
+.artifact-2,
+.artifact-4 {
+  align-self: self-start;
+}
+.artifact-1,
+.artifact-5 {
+  align-self: self-end;
+}
+
+.artifact-1,
+.artifact-2,
+.artifact-4,
+.artifact-5 {
+  width: 20%;
+}
+
+.artifact-1 {
+  animation: bounce 2.5s infinite;
+  transform: rotate(5deg);
+}
+.artifact-2 {
+  animation: bounce 2.3s infinite;
+}
+.artifact-4 {
+  animation: bounce 2.5s infinite;
+}
+.artifact-5 {
+  animation: bounce 2.3s infinite;
+  transform: rotate(-5deg);
+}
+.artifact-1 img:hover,
+.artifact-2 img:hover,
+.artifact-4 img:hover,
+.artifact-5 img:hover {
+  transform: scale(200%);
 }
 
 /* -- Adjustments for mobile -- */
