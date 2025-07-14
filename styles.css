@@ -6,15 +6,26 @@
 
 :root {
   --magenta: 147, 14, 78;
+  --lightgrey: 223, 223, 223;
+  --almostblack: 29, 29, 29;
 }
 
 body {
+  padding: 0 1rem;
   font-family: "Inter", Helvetica, sans-serif;
   text-align: center;
-  padding: 0 1rem;
+  color: var(--almostblack);
 }
 
-/* --- HEADER --- */
+/* --- Custom animations --- */
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-5%);
+  }
+}
+
+/* --- Header --- */
 header,
 header div {
   padding: 1rem 0;
@@ -33,7 +44,7 @@ header img {
   height: 100%;
 }
 
-/* --- HOME | HERO SECTION --- */
+/* --- Home > Hero Section --- */
 .hero {
   margin: auto;
   text-align: left;
@@ -53,6 +64,8 @@ header img {
   position: absolute;
   right: -3.5rem;
   top: 3rem;
+  filter: drop-shadow(0 0.2rem 0.1rem rgba(var(--almostblack), 0.5));
+  animation: bounce 1.5s infinite;
 }
 
 .hero-text {
@@ -67,4 +80,15 @@ header img {
   margin-bottom: 2rem;
 }
 
-/* --- HOME | TOOLS USED SECTION --- */
+.hero-text span {
+  color: rgb(var(--lightgrey));
+
+  transition: padding ease-out 80ms;
+}
+.hero-text span:hover {
+  color: white;
+  background-color: rgb(var(--magenta));
+  padding: 0.2rem 0rem;
+}
+
+/* --- Home > Tools section --- */
