@@ -241,27 +241,36 @@ footer {
 
 /* --- About > Artifacts section --- */
 
-h2 span {
-  font-weight: normal;
-}
 .container-artifacts {
   margin-top: 2rem;
   padding: 1rem;
+
   background-color: rgba(var(--almostblack), 0.05);
   border-radius: 0.7rem;
-  font-size: 0.7rem;
+
   display: flex;
-  position: relative;
   cursor: pointer;
 }
+
 .container-artifacts p {
+  font-size: 0.7rem;
   margin-top: 0.4rem;
+}
+
+h2 span {
+  font-weight: normal;
+}
+
+.container-artifacts > div:first-child,
+.container-artifacts > div:last-child {
+  display: flex;
 }
 
 .artifact-2,
 .artifact-4 {
   align-self: self-start;
 }
+.artifact-3,
 .artifact-1,
 .artifact-5 {
   align-self: self-end;
@@ -271,7 +280,7 @@ h2 span {
 .artifact-2,
 .artifact-4,
 .artifact-5 {
-  width: 20%;
+  width: 50%;
 }
 
 .artifact-1 {
@@ -301,13 +310,27 @@ h2 span {
   .container {
     max-width: 30.625rem;
   }
+
   .feature-bar {
     margin: 0 0 2.5rem 0;
   }
+
   .projects h2 {
     text-align: left;
   }
   .projects p {
     text-align: left;
+  }
+
+  .container-artifacts > div:first-child,
+  .container-artifacts > div:last-child {
+    flex-direction: column;
+  }
+  .artifact-1,
+  .artifact-2,
+  .artifact-4,
+  .artifact-5 {
+    width: 100%;
+    height: 50%;
   }
 }
