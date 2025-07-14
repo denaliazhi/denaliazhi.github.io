@@ -35,7 +35,6 @@ body {
 /* --- Header --- */
 header,
 header div {
-  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +42,7 @@ header div {
 }
 
 header {
+  padding: 1rem 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -53,6 +53,7 @@ header img {
 /* --- Home > Hero Section --- */
 .hero {
   text-align: left;
+  margin-top: 10vh;
 
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +75,6 @@ header img {
 }
 
 .hero-text {
-  min-width: 20rem;
   line-height: 2rem;
 }
 
@@ -116,60 +116,36 @@ header img {
   gap: 1.5rem 2rem;
 }
 
-.feature-bar p:nth-of-type(1)::before {
+.feature-bar p::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
   width: 1rem;
   height: 1rem;
-  background: url("assets/figma-icon.png") no-repeat 0 0;
+}
+.feature-bar p:nth-of-type(1)::before {
+  background: url("assets/icon-figma.png") no-repeat 0 0;
   background-size: contain;
 }
-
 .feature-bar p:nth-of-type(2)::before {
-  display: inline-block;
-  margin-right: 0.5rem;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background: url("assets/html-icon.png") no-repeat 0 0;
+  background: url("assets/icon-html.png") no-repeat 0 0;
   background-size: contain;
 }
 
 .feature-bar p:nth-of-type(3)::before {
-  display: inline-block;
-  margin-right: 0.5rem;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background: url("assets/css-icon.png") no-repeat 0 0;
+  background: url("assets/icon-css.png") no-repeat 0 0;
   background-size: contain;
 }
 .feature-bar p:nth-of-type(4)::before {
-  display: inline-block;
-  margin-right: 0.5rem;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background: url("assets/js-icon.png") no-repeat 0 0;
+  background: url("assets/icon-js.png") no-repeat 0 0;
   background-size: contain;
 }
 .feature-bar p:nth-of-type(5)::before {
-  display: inline-block;
-  margin-right: 0.5rem;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background: url("assets/python-icon.png") no-repeat 0 0;
+  background: url("assets/icon-python.png") no-repeat 0 0;
   background-size: contain;
 }
 .feature-bar p:nth-of-type(6)::before {
-  display: inline-block;
-  margin-right: 0.5rem;
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background: url("assets/postgresql-icon.png") no-repeat 0 0;
+  background: url("assets/icon-postgresql.png") no-repeat 0 0;
   background-size: contain;
 }
 
@@ -183,14 +159,26 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.projects > div > div {
+.project-card {
   flex: 1 1 0;
-  height: 250px;
-  min-width: 280px;
-  background-color: rgb(219, 219, 219);
+  width: 17.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  border: 1px solid black;
+}
+
+.project-card img {
+  flex: 1 1 0;
+
+  height: 90%;
+  width: auto;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
