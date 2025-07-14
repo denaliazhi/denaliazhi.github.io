@@ -16,9 +16,10 @@ body {
   color: var(--almostblack);
 }
 
-body > :not(header) {
+.container {
   padding: 0 2rem;
-  margin-bottom: 3rem;
+  margin: auto;
+  max-width: 54.5rem;
 }
 
 /* --- Custom animations --- */
@@ -32,7 +33,7 @@ body > :not(header) {
 /* --- Header --- */
 header,
 header div {
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +45,7 @@ header {
 }
 
 header img {
-  height: 100%;
+  width: 30px;
 }
 
 /* --- Home > Hero Section --- */
@@ -102,16 +103,17 @@ header img {
 }
 
 .feature-bar {
-  justify-content: center;
+  margin-top: 5rem;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem 5rem;
+  gap: 2rem 3rem;
 }
 
 .feature-bar > div {
-  gap: 2rem;
+  gap: 1.5rem 2rem;
 }
 
-.feature-bar p:nth-child(1)::before {
+.feature-bar p:nth-of-type(1)::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
@@ -121,7 +123,7 @@ header img {
   background-size: contain;
 }
 
-.feature-bar p:nth-child(2)::before {
+.feature-bar p:nth-of-type(2)::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
@@ -131,7 +133,7 @@ header img {
   background-size: contain;
 }
 
-.feature-bar p:nth-child(3)::before {
+.feature-bar p:nth-of-type(3)::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
@@ -140,7 +142,7 @@ header img {
   background: url("assets/css-icon.png") no-repeat 0 0;
   background-size: contain;
 }
-.feature-bar p:nth-child(4)::before {
+.feature-bar p:nth-of-type(4)::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
@@ -149,7 +151,7 @@ header img {
   background: url("assets/js-icon.png") no-repeat 0 0;
   background-size: contain;
 }
-.feature-bar p:nth-child(5)::before {
+.feature-bar p:nth-of-type(5)::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
@@ -158,7 +160,7 @@ header img {
   background: url("assets/python-icon.png") no-repeat 0 0;
   background-size: contain;
 }
-.feature-bar p:nth-child(6)::before {
+.feature-bar p:nth-of-type(6)::before {
   display: inline-block;
   margin-right: 0.5rem;
   content: "";
@@ -166,4 +168,15 @@ header img {
   height: 1rem;
   background: url("assets/postgresql-icon.png") no-repeat 0 0;
   background-size: contain;
+}
+
+/* -- Adjustments for mobile -- */
+
+@media (max-width: 972px) {
+  .container {
+    max-width: 30.625rem;
+  }
+  .feature-bar {
+    margin-top: 1rem;
+  }
 }
