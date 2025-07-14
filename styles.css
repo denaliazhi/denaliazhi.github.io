@@ -20,6 +20,8 @@ body {
   padding: 0 2rem;
   margin: auto;
   max-width: 54.5rem;
+
+  transition: all linear 0.25s;
 }
 
 /* --- Custom animations --- */
@@ -72,6 +74,7 @@ header img {
 }
 
 .hero-text {
+  min-width: 20rem;
   line-height: 2rem;
 }
 
@@ -103,7 +106,7 @@ header img {
 }
 
 .feature-bar {
-  margin-top: 5rem;
+  margin: 5rem 0;
   justify-content: space-between;
   align-items: center;
   gap: 2rem 3rem;
@@ -170,13 +173,37 @@ header img {
   background-size: contain;
 }
 
+/* --- Home > Projects section --- */
+
+.projects h2 {
+  margin-bottom: 1.5rem;
+}
+
+.projects > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projects > div > div {
+  flex: 1 1 0;
+  height: 250px;
+  min-width: 280px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 0.5rem;
+}
+
 /* -- Adjustments for mobile -- */
 
-@media (max-width: 972px) {
+@media (max-width: 985px) {
   .container {
     max-width: 30.625rem;
   }
   .feature-bar {
-    margin-top: 1rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .projects h2 {
+    text-align: left;
   }
 }
