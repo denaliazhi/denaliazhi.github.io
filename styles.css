@@ -18,6 +18,7 @@ body {
 
 body > :not(header) {
   padding: 0 2rem;
+  margin-bottom: 3rem;
 }
 
 /* --- Custom animations --- */
@@ -43,13 +44,11 @@ header {
 }
 
 header img {
-  width: auto;
   height: 100%;
 }
 
 /* --- Home > Hero Section --- */
 .hero {
-  margin: auto;
   text-align: left;
 
   display: flex;
@@ -95,3 +94,76 @@ header img {
 }
 
 /* --- Home > Tools section --- */
+
+.feature-bar,
+.feature-bar > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-bar {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 5rem;
+}
+
+.feature-bar > div {
+  gap: 2rem;
+}
+
+.feature-bar p:nth-child(1)::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url("assets/figma-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.feature-bar p:nth-child(2)::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url("assets/html-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.feature-bar p:nth-child(3)::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url("assets/css-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+.feature-bar p:nth-child(4)::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url("assets/js-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+.feature-bar p:nth-child(5)::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url("assets/python-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
+.feature-bar p:nth-child(6)::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: url("assets/postgresql-icon.png") no-repeat 0 0;
+  background-size: contain;
+}
