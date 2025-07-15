@@ -301,7 +301,11 @@ h2 span {
 .artifact-5 img:hover {
   transform: scale(200%);
 }
-
+/* --- About > Map section --- */
+.map {
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+}
 /* --- Play > Projects section --- */
 
 .projects > p {
