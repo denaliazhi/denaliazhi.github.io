@@ -11,6 +11,8 @@
 }
 
 body {
+  min-height: 100vh;
+
   font-family: "Inter", Helvetica, sans-serif;
   text-align: center;
   color: var(--almostblack);
@@ -253,7 +255,7 @@ footer div {
 
 /* --- About > Artifacts section --- */
 
-.container .small-text {
+.container > .small-text {
   margin-top: 1rem;
 }
 
@@ -335,25 +337,24 @@ h2 span {
 .play .project-card p {
   font-weight: 700;
 }
+
 .play > div > div:nth-of-type(1) > .project-card {
   background-color: rgb(241, 241, 241);
   color: rgb(var(--almostblack));
 }
-
 .play > div > div:nth-of-type(2) > .project-card {
   background-color: rgb(176, 195, 175);
   color: white;
 }
+.play > div > div:nth-of-type(3) > .project-card {
+  background-color: rgb(178, 161, 141);
+}
+
 .play > div > div:nth-of-type(2) a,
 .play > div > div:nth-of-type(2) a:active,
 .play > div > div:nth-of-type(2) a:visited {
   color: white;
 }
-
-.play > div > div:nth-of-type(3) > .project-card {
-  background-color: rgb(178, 161, 141);
-}
-
 /* -- Adjustments for mobile -- */
 
 @media (max-width: 985px) {
