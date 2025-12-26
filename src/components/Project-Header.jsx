@@ -1,7 +1,7 @@
 export default function ProjectHeader({
   title,
   date = false,
-  desc,
+  desc = false,
   type,
   tools,
 }) {
@@ -14,17 +14,13 @@ export default function ProjectHeader({
       <hr />
       <ul className="tags">
         {tools.map((tool) => (
-          <li key={`${title} - ${tool}`}>
-            {tool}
-          </li>
+          <li key={`${title} - ${tool}`}>{tool}</li>
         ))}
         {type.map((item) => (
-          <li key={`${title} - ${item}`}>
-            {item}
-          </li>
+          <li key={`${title} - ${item}`}>{item}</li>
         ))}
       </ul>
-      <p>{desc}</p>
+      {desc && <p>{desc}</p>}
     </section>
   );
 }

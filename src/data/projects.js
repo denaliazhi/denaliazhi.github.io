@@ -22,8 +22,7 @@ const projects = {
   groceryShop: {
     title: "ESL Grocery Shop",
     date: "Sep 2025",
-    desc_short:
-      "A narrative app for language learners",
+    desc_short: "A narrative app for language learners",
     desc_long: `I built a narrative app to help English as a Second Language (ESL) 
       students navigate the grocery store and gain confidence in their everyday lives.`,
     images_featured: [
@@ -50,13 +49,11 @@ const projects = {
   researchStartup: {
     title: "Orbitl",
     date: "Nov 2025",
-    desc_short:
-      "A clean launch for a research startup",
-    desc_long:
-      "I designed and built a website for an early-stage research startup.",
+    desc_short: "A clean launch for a research startup",
+    desc_long: "I built the first website for a research management startup.",
     images_featured: [
       {
-        src: "research-startup-cover.png",
+        src: "orbitl-cover.png",
         alt: "Cover of research startup website",
       },
     ],

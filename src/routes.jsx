@@ -4,7 +4,7 @@ import About from "./pages/About";
 import NotFound from "./pages/Not-Found";
 import GroceryApp from "./pages/Project-Grocery-App";
 import HaikuHunt from "./pages/Project-Haiku-Hunt";
-import ResearchStartup from "./pages/Project-Research-Startup";
+import Orbitl from "./pages/Project-Orbitl";
 import OdinProject from "./pages/The-Odin-Project";
 
 const routes = [
@@ -30,8 +30,8 @@ const routes = [
         element: <HaikuHunt />,
       },
       {
-        path: "/Research-Startup",
-        element: <ResearchStartup />,
+        path: "/Orbitl",
+        element: <Orbitl />,
       },
       {
         path: "/The-Odin-Project",
