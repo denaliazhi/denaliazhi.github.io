@@ -1744,6 +1744,10 @@ td ul li::marker {
 .project-details td:first-of-type {
   border-left: none;
 }
+.project-details th:not(:first-of-type),
+.project-details td:not(:first-of-type) {
+  border-left: 2px solid var(--darker-background);
+}
 
 #view-comparison > div {
   gap: 0;

@@ -17,15 +17,12 @@ export default function About() {
           <>
             <h2>How'd I get here?</h2>
             <p>
-              I wrote my first computer program at
-              the age of 12...kidding.
+              When I was 12, I wrote my first computer program...just kidding.
             </p>
             <p>(Read time: 1 minute)</p>
           </>
         }
-        col2={
-          <Timeline contents={personalTimeline} />
-        }
+        col2={<Timeline contents={personalTimeline} />}
       />
       <TwoCol
         id="other-works"
@@ -36,9 +33,7 @@ export default function About() {
               icon="/odin-projects/etch-a-sketch.png"
               content={{
                 heading: "The Odin Project",
-                body: [
-                  "Five months of learning web development",
-                ],
+                body: ["Five months of learning web development"],
               }}
             />
           </a>
@@ -49,9 +44,7 @@ export default function About() {
               icon="/about/old-portfolio.png"
               content={{
                 heading: "Data + Design Archive",
-                body: [
-                  "Projects from my college-era",
-                ],
+                body: ["Projects from my college-era"],
               }}
             />
           </a>
@@ -60,32 +53,25 @@ export default function About() {
 
       <div id="toolkit">
         <h2>My toolkit</h2>
-        <p>
-          Hover or tap on an icon for its label.
-        </p>
-        {Object.entries(toolkit).map(
-          (category) => (
-            <div key={category[0]}>
-              <h3>
-                {category[0][0].toUpperCase() +
-                  category[0].slice(1)}
-              </h3>
-              <ul>
-                {category[1].map((item) => (
-                  <li key={item.tool}>
-                    <span
-                      className="icon"
-                      style={{
-                        backgroundImage: `url(${item.icon})`,
-                      }}
-                    ></span>
-                    <p>{item.tool}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )
-        )}
+        <p>Hover or tap on an icon for its label.</p>
+        {Object.entries(toolkit).map((category) => (
+          <div key={category[0]}>
+            <h3>{category[0][0].toUpperCase() + category[0].slice(1)}</h3>
+            <ul>
+              {category[1].map((item) => (
+                <li key={item.tool}>
+                  <span
+                    className="icon"
+                    style={{
+                      backgroundImage: `url(${item.icon})`,
+                    }}
+                  ></span>
+                  <p>{item.tool}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </main>
   );

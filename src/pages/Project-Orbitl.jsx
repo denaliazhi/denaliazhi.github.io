@@ -23,7 +23,7 @@ export default function Orbitl() {
           type={project.type}
           tools={project.tools}
         />
-        <table class="project-details">
+        <table className="project-details">
           <thead>
             <tr>
               <th>Project Type</th>
@@ -118,9 +118,10 @@ export default function Orbitl() {
         <OneCol id="branding">
           <h3>Branding</h3>
           <p>
-            I worked with the client to define their brand identity. We selected
-            colors and fonts that would convey knowledge and approachability to
-            a target audience of scientists and academic researchers.
+            I worked with the client to define a brand identity that would
+            connect with scientists and academic researchers. We selected colors
+            and fonts to strike a balance between knowledge, authority, and
+            approachability.
           </p>
           <TwoCol
             id="visual-elements"
@@ -161,9 +162,9 @@ export default function Orbitl() {
         <OneCol id="copywriting">
           <h3>Copywriting</h3>
           <p>
-            In discussing their brand voice, the client wanted to "keep it
-            concise" but also to "show that [they] care" about their fellow
-            scientists. I distilled their messaging into short, personable
+            The client wanted to use language that was " concise" but also to
+            "show that [they] cared" about their fellow scientists. Accordingly,
+            I distilled their existing messaging into short, personable
             statements for the web.
           </p>
           <Accordion heading="Example">
@@ -198,11 +199,10 @@ export default function Orbitl() {
         <OneCol id="digital-assets">
           <h3>Digital assets</h3>
           <p>
-            The client stated, "A lot of software in the research space is
-            outdated. We're building a solution that's sleek, modern, and
-            intuitive." Accordingly, I designed mockups of the product interface
-            and selected other assets for the website that matched the desired
-            look and feel.
+            Finally, the client stated, "A lot of software in the research space
+            is outdated. We want to build a solution that's sleek, modern, and
+            intuitive." I designed assets that would match the product's desired
+            look and feel to its website.
           </p>
           <img
             src="projects/orbitl-custom-assets.png"
@@ -212,8 +212,8 @@ export default function Orbitl() {
         <OneCol id="mockups">
           <h3>Mockups</h3>
           <p>
-            Through rounds of feedback and refinement, I assembled the elements
-            of the website into a cohesive and compelling pitch for the startup.
+            After rounds of feedback and refinement, I assembled the elements of
+            the website into a cohesive and compelling pitch for the product.
           </p>
           <img src="projects/orbitl-mockups.png" alt="Website mockups" />
         </OneCol>
