@@ -1,5 +1,6 @@
 import App from "./App";
 import Home from "./pages/Home";
+import Design from "./pages/Design";
 import About from "./pages/About";
 import NotFound from "./pages/Not-Found";
 import GroceryApp from "./pages/Project-Grocery-App";
@@ -20,6 +21,10 @@ const routes = [
       {
         path: "/About",
         element: <About />,
+      },
+      {
+        path: "/Design",
+        element: <Design />,
       },
       {
         path: "/ESL-Grocery-Shop",

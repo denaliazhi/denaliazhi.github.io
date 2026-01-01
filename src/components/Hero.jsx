@@ -1,17 +1,14 @@
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [isAnimating, setIsAnimating] =
-    useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const handleClick = () => {
     !isAnimating && setIsAnimating(true);
   };
 
   useEffect(() => {
     // Sound effect for slide animation
-    const wee = new Audio(
-      "/home/wee-floraphonic.mp3"
-    );
+    const wee = new Audio("/home/wee-floraphonic.mp3");
     if (isAnimating) {
       wee.play();
       setTimeout(() => {
@@ -36,19 +33,13 @@ export default function Hero() {
             height="360"
           />
           <div
-            className={
-              isAnimating
-                ? "greeting sliding"
-                : "greeting"
-            }
+            className={isAnimating ? "greeting sliding" : "greeting"}
             onClick={handleClick}
           >
             <h1>hi</h1>
             <span id="greeting-hand"></span>
             <p className="speech-bubble">
-              {isAnimating
-                ? "Weeee!"
-                : "Give me a push?"}
+              {isAnimating ? "Weeee!" : "Give me a push?"}
             </p>
           </div>
         </div>
@@ -56,19 +47,14 @@ export default function Hero() {
           <h1>My name is</h1>
           <h1>
             Denalia Z
-            <span
-              className="letter-placeholder"
-              onClick={handleClick}
-            >
+            <span className="letter-placeholder" onClick={handleClick}>
               hi
             </span>
           </h1>
           <hr id="hero-horizon" />
           <h2>
-            A designer who develops. A developing
-            designer. Pun enthusiast.
+            <a href="/Design">Designer</a>. Developer. Pun enthusiast.
           </h2>
-          {/* Swap on click, change flex order */}
         </div>
       </section>
     </>

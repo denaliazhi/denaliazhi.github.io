@@ -1,4 +1,4 @@
-const projects = {
+const dev_projects = {
   haikuHunt: {
     title: "Haiku Hunt",
     date: "Oct 2025",
@@ -46,7 +46,7 @@ const projects = {
     type: ["Personal"],
     tools: ["React"],
   },
-  researchStartup: {
+  orbitl: {
     title: "Orbitl",
     date: "Nov 2025",
     desc_short: "A clean launch for a research startup",
@@ -62,4 +62,4 @@ const projects = {
   },
 };
 
-export { projects };
+export { dev_projects };

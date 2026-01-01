@@ -1,4 +1,4 @@
-import { projects } from "../data/projects";
+import { dev_projects } from "../data/dev-projects";
 import ProjectHeader from "../components/Project-Header";
 import ProjectNav from "../components/Project-Nav";
 import Carousel from "../components/Carousel";
@@ -11,7 +11,7 @@ import ButtonBar from "../components/Button-Bar";
 import { useRef } from "react";
 
 export default function GroceryApp() {
-  const project = projects.groceryShop;
+  const project = dev_projects.groceryShop;
   const articleRef = useRef(null);
 
   return (
@@ -24,9 +24,7 @@ export default function GroceryApp() {
           type={project.type}
           tools={project.tools}
         />
-        <Carousel
-          images={project.images_featured}
-        ></Carousel>
+        <Carousel images={project.images_featured}></Carousel>
         <Callout
           icon="/icons/lightbulb.png"
           content={{
@@ -44,32 +42,23 @@ export default function GroceryApp() {
             <>
               <h2>Background</h2>
               <p>
-                During my first job out of
-                college, I spent my evenings
-                volunteering at the local library
-                as an ESL teacher. My students—
-                immigrants with little to no
-                understanding of the English
-                language— often faced situations
-                like the one above.
+                During my first job out of college, I spent my evenings
+                volunteering at the local library as an ESL teacher. My
+                students— immigrants with little to no understanding of the
+                English language— often faced situations like the one above.
               </p>
               <p>
-                Early on, I sensed their doubt and
-                frustration as they tried to learn
-                a new language.{" "}
+                Early on, I sensed their doubt and frustration as they tried to
+                learn a new language.{" "}
                 <span className="highlight">
-                  A crucial part of keeping them
-                  invested in the process was
-                  connecting our lessons to their
-                  everyday lives.
+                  A crucial part of keeping them invested in the process was
+                  connecting our lessons to their everyday lives.
                 </span>
               </p>
               <p>
-                I used various strategies to build
-                real world context in the
-                classroom, but I sometimes wished
-                that better tools existed for this
-                purpose.
+                I used various strategies to build real world context in the
+                classroom, but I sometimes wished that better tools existed for
+                this purpose.
               </p>
             </>
           }
@@ -78,8 +67,7 @@ export default function GroceryApp() {
               image={{
                 src: "/projects/grocery-esl-students.png",
                 alt: "My ESL students and I",
-                caption:
-                  "My last day as an ESL teacher",
+                caption: "My last day as an ESL teacher",
               }}
             />
           }
@@ -88,13 +76,9 @@ export default function GroceryApp() {
         <OneCol id="task">
           <h2>The (Original) Task</h2>
           <p>
-            Some months into learning web
-            development with{" "}
-            <a href="https://www.theodinproject.com/about">
-              The Odin Project
-            </a>
-            , I reached an assignment to build a
-            mock{" "}
+            Some months into learning web development with{" "}
+            <a href="https://www.theodinproject.com/about">The Odin Project</a>,
+            I reached an assignment to build a mock{" "}
             <a href="https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart">
               shopping cart
             </a>{" "}
@@ -103,14 +87,12 @@ export default function GroceryApp() {
           <p>The requirements were as follows:</p>
           <ol>
             <li>
-              A <span className="bold">shop</span>{" "}
-              page, displaying items that a user
-              could add to their cart
+              A <span className="bold">shop</span> page, displaying items that a
+              user could add to their cart
             </li>
             <li>
-              A <span className="bold">cart</span>{" "}
-              page, showing the user's selected
-              items and their quantities
+              A <span className="bold">cart</span> page, showing the user's
+              selected items and their quantities
             </li>
           </ol>
         </OneCol>
@@ -118,13 +100,10 @@ export default function GroceryApp() {
         <OneCol id="take">
           <h2>My Take</h2>
           <p>
-            Inspired by my teaching experience, I
-            decided to turn the shopping cart into
-            a narrative app about grocery shopping
-            that could{" "}
+            Inspired by my teaching experience, I decided to turn the shopping
+            cart into a narrative app about grocery shopping that could{" "}
             <span className="highlight">
-              address the needs of ESL students
-              and teachers
+              address the needs of ESL students and teachers
             </span>
             .
           </p>
@@ -135,21 +114,17 @@ export default function GroceryApp() {
               heading="a realistic context for grammar and vocabulary"
             >
               <p>
-                Through a virtual grocery store,
-                students would be able to
-                associate the language of shopping
-                with familiar scenes and actions.
+                Through a virtual grocery store, students would be able to
+                associate the language of shopping with familiar scenes and
+                actions.
               </p>
             </Accordion>
             <Accordion heading="accessible pronunciation practice">
               <p>
-                ESL students often live and work
-                around non-English speakers, so
-                they struggle to practice their
-                pronunciation outside of class.
-                This app would feature
-                text-to-speech event narration to
-                address this gap.
+                ESL students often live and work around non-English speakers, so
+                they struggle to practice their pronunciation outside of class.
+                This app would feature text-to-speech event narration to address
+                this gap.
               </p>
             </Accordion>
           </div>
@@ -157,19 +132,15 @@ export default function GroceryApp() {
           <div className="accordion-group">
             <Accordion heading="ready-to-use and reusable content">
               <p>
-                Teachers would save the time and
-                effort of preparing a lesson from
-                scratch or setting up a scene in
-                the classroom.
+                Teachers would save the time and effort of preparing a lesson
+                from scratch or setting up a scene in the classroom.
               </p>
             </Accordion>
             <Accordion heading="a source of engagement during in-person or online class">
               <p>
-                This app would allow students to
-                engage with the content in a way
-                that would be difficult to achieve
-                through traditional means such as
-                slides.
+                This app would allow students to engage with the content in a
+                way that would be difficult to achieve through traditional means
+                such as slides.
               </p>
             </Accordion>
           </div>
@@ -178,13 +149,9 @@ export default function GroceryApp() {
         <OneCol id="design">
           <h2>Design</h2>
           <p>
-            I planned out a{" "}
-            <span className="bold">
-              user flow
-            </span>{" "}
-            based on the different stages of
-            grocery shopping that I wanted to
-            include in the app:
+            I planned out a <span className="bold">user flow</span> based on the
+            different stages of grocery shopping that I wanted to include in the
+            app:
           </p>
           <img
             src="/projects/grocery-user-flow.png"
@@ -192,76 +159,50 @@ export default function GroceryApp() {
             height="350"
           />
           <p>
-            The user would start the lesson
-            outside of the store. Once inside,
-            they'd navigate between grocery
-            sections and add the items they
-            desired to their cart. When they were
-            done shopping, they'd check out and
-            review their receipt.
+            The user would start the lesson outside of the store. Once inside,
+            they'd navigate between grocery sections and add the items they
+            desired to their cart. When they were done shopping, they'd check
+            out and review their receipt.
           </p>
           <p>
-            To visualize the user flow and
-            interface, I created a basic{" "}
-            <span className="bold">
-              prototype
-            </span>{" "}
-            in Figma.
+            To visualize the user flow and interface, I created a basic{" "}
+            <span className="bold">prototype</span> in Figma.
           </p>
           <img
             src="/projects/grocery-prototype.png"
             alt="Prototype for the app"
             height="356"
           />
-          <p>
-            Some of the key design questions that
-            I asked were
-          </p>
+          <p>Some of the key design questions that I asked were</p>
           <div className="accordion-group">
             <Accordion
               heading="How do I balance realism with abstraction?"
               startOpen={true}
             >
               <p>
-                A realistic store interface could
-                help students translate the lesson
-                to their physical world. At the
-                same time, digital realism might
-                confuse users if they're used to
-                the abstraction of online
-                shopping.
+                A realistic store interface could help students translate the
+                lesson to their physical world. At the same time, digital
+                realism might confuse users if they're used to the abstraction
+                of online shopping.
               </p>
               <aside>
                 <p>
-                  <span className="bold">
-                    Example
-                  </span>
+                  <span className="bold">Example</span>
                 </p>{" "}
                 <p>
-                  In the physical world, a shopper
-                  might take a product from the
-                  shelf and set it in their cart.
-                  An online simulation could
-                  require the user to drag and
-                  drop images of products onto an
-                  image of a cart. However, the
-                  user might not understand this
-                  requirement since most real
-                  online stores show a simple "Add
+                  In the physical world, a shopper might take a product from the
+                  shelf and set it in their cart. An online simulation could
+                  require the user to drag and drop images of products onto an
+                  image of a cart. However, the user might not understand this
+                  requirement since most real online stores show a simple "Add
                   to cart" button instead.
                 </p>
               </aside>
               <p>
-                <span className="bold">
-                  I decided that
-                </span>{" "}
-                the product display and cart would
-                retain the familiarity of an
-                online store while{" "}
+                <span className="bold">I decided that</span> the product display
+                and cart would retain the familiarity of an online store while{" "}
                 <span className="highlight">
-                  the background image would
-                  change to match the grocery
-                  section
+                  the background image would change to match the grocery section
                 </span>
                 , simulating a physical store.
               </p>
@@ -290,41 +231,31 @@ export default function GroceryApp() {
                 }
               />
               <p>
-                In addition, bookend scenes
-                outside the store would add
-                realism without convoluting the
-                shopping experience.
+                In addition, bookend scenes outside the store would add realism
+                without convoluting the shopping experience.
               </p>
             </Accordion>
             <Accordion heading="How do I convey the app's educational value?">
               <p>
-                I would create context in two
-                ways. First, the main content
-                would be preceded by a dialog box
-                that informs the user of the
-                lesson's purpose. Second, details
-                about the lesson would be included
-                in a section under the main
-                content.
+                I would create context in two ways. First, the main content
+                would be preceded by a dialog box that informs the user of the
+                lesson's purpose. Second, details about the lesson would be
+                included in a section under the main content.
               </p>
             </Accordion>
             <Accordion heading="How do I ensure students follow the user flow?">
               <p>
-                Students would need to navigate
-                between a linear, click-through
-                mode for bookend scenes and a
-                free-roam mode for the shopping
+                Students would need to navigate between a linear, click-through
+                mode for bookend scenes and a free-roam mode for the shopping
                 scenes.
               </p>
               <p>
-                During both modes, a narration bar
-                at the bottom of the screen would
-                provide users with{" "}
+                During both modes, a narration bar at the bottom of the screen
+                would provide users with{" "}
                 <span className="highlight">
                   consistent visual and audio cues
                 </span>{" "}
-                . Animations (with CSS) would
-                offer additional feedback on
+                . Animations (with CSS) would offer additional feedback on
                 interactive elements.
               </p>
             </Accordion>
@@ -334,43 +265,27 @@ export default function GroceryApp() {
         <OneCol id="development">
           <h2>Development</h2>
           <p>
-            This was my first time developing a
-            multi-page React app. For the sake of
-            brevity, I've kept most of the
-            technical details in my{" "}
+            This was my first time developing a multi-page React app. For the
+            sake of brevity, I've kept most of the technical details in my{" "}
             <a href="https://github.com/denaliazhi/esl-grocery-shop/tree/main?tab=readme-ov-file#%E2%80%8D-technical-details">
               Github repository
             </a>
             .
           </p>
-          <p>
-            My primary challenges to
-            implementation were as follows:
-          </p>
+          <p>My primary challenges to implementation were as follows:</p>
           <ol>
-            <li>
-              Breaking the Figma design into React
-              components
-            </li>
-            <li>
-              Configuring navigation between
-              different routes
-            </li>
-            <li>
-              Managing states and side effects
-            </li>
+            <li>Breaking the Figma design into React components</li>
+            <li>Configuring navigation between different routes</li>
+            <li>Managing states and side effects</li>
             <li>Dynamically narrating events</li>
           </ol>
           <p>
-            I continuously refactored my code as I
-            discovered new concepts and best
-            practices. After about a week, I was
-            able to bring my design into reality.
+            I continuously refactored my code as I discovered new concepts and
+            best practices. After about a week, I was able to bring my design
+            into reality.
           </p>
           <ButtonBar label="Check it out">
-            <a href="https://esl-grocery-shop.vercel.app/">
-              Demo
-            </a>
+            <a href="https://esl-grocery-shop.vercel.app/">Demo</a>
             <a href="https://github.com/denaliazhi/esl-grocery-shop/tree/main?tab=readme-ov-file#%E2%80%8D-technical-details">
               Github repository
             </a>
@@ -380,15 +295,11 @@ export default function GroceryApp() {
         <OneCol id="thoughts">
           <h2>Final Thoughts</h2>
           <p>
-            When I first planned this app, it felt
-            beyond my knowledge at the time. As I
-            overcame each barrier to
-            implementation, I developed greater
-            confidence in my own abilities and a
-            sense of alignment between my work and
-            values. In the future, I'd love to
-            build a suite of accessible
-            educational tools like this one.
+            When I first planned this app, it felt beyond my knowledge at the
+            time. As I overcame each barrier to implementation, I developed
+            greater confidence in my own abilities and a sense of alignment
+            between my work and values. In the future, I'd love to build a suite
+            of accessible educational tools like this one.
           </p>
         </OneCol>
         <a href="/Haiku-Hunt">
@@ -396,9 +307,7 @@ export default function GroceryApp() {
             icon="/projects/haiku-cover.png"
             content={{
               heading: "Care for another?",
-              body: [
-                projects.haikuHunt.desc_short,
-              ],
+              body: [dev_projects.haikuHunt.desc_short],
             }}
           ></Callout>
         </a>

@@ -1,4 +1,4 @@
-import { projects } from "../data/projects";
+import { dev_projects } from "../data/dev-projects";
 import ProjectHeader from "../components/Project-Header";
 import ProjectNav from "../components/Project-Nav";
 import Carousel from "../components/Carousel";
@@ -11,7 +11,7 @@ import ButtonBar from "../components/Button-Bar";
 import { useRef } from "react";
 
 export default function Orbitl() {
-  const project = projects.researchStartup;
+  const project = dev_projects.orbitl;
   const articleRef = useRef(null);
 
   return (
