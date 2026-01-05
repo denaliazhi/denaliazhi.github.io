@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 
-export default function Hero() {
+export default function Hero({
+  categories = [
+    { title: "Designer", link: "/design" },
+    { title: "Developer", link: "/" },
+    { title: "Dabbler in the arts", link: "/dabbles" },
+  ],
+  selected = "Developer",
+  caption = "I build things on the web",
+}) {
   const [isAnimating, setIsAnimating] = useState(false);
   const handleClick = () => {
     !isAnimating && setIsAnimating(true);
@@ -52,11 +60,22 @@ export default function Hero() {
             </span>
           </h1>
           <hr id="hero-horizon" />
-          <h2>
-            <a href="/Design">Designer</a>. Developer. Pun enthusiast.
-          </h2>
+          <p>{caption}</p>
         </div>
       </section>
+      <nav id="project-categories">
+        <ul>
+          {categories.map((category) => (
+            <a
+              key={category.title}
+              href={category.link}
+              className={selected === category.title ? "selected" : null}
+            >
+              <li>{category.title}</li>
+            </a>
+          ))}
+        </ul>
+      </nav>
     </>
   );
 }

@@ -73,7 +73,7 @@ export default function GroceryApp() {
           }
         />
         <hr />
-        <OneCol id="task">
+        <OneCol id="the-task">
           <h2>The (Original) Task</h2>
           <p>
             Some months into learning web development with{" "}
@@ -97,7 +97,7 @@ export default function GroceryApp() {
           </ol>
         </OneCol>
         <hr />
-        <OneCol id="take">
+        <OneCol id="my-take">
           <h2>My Take</h2>
           <p>
             Inspired by my teaching experience, I decided to turn the shopping
@@ -292,7 +292,7 @@ export default function GroceryApp() {
           </ButtonBar>
         </OneCol>
         <hr />
-        <OneCol id="thoughts">
+        <OneCol id="final-thoughts">
           <h2>Final Thoughts</h2>
           <p>
             When I first planned this app, it felt beyond my knowledge at the
@@ -302,7 +302,7 @@ export default function GroceryApp() {
             of accessible educational tools like this one.
           </p>
         </OneCol>
-        <a href="/Haiku-Hunt">
+        <a href="/haiku-hunt">
           <Callout
             icon="/projects/haiku-cover.png"
             content={{
@@ -316,7 +316,7 @@ export default function GroceryApp() {
         anchorBase="grocery"
         sections={[
           "Background",
-          "The (Original) Task",
+          "The Task",
           "My Take",
           "Design",
           "Development",

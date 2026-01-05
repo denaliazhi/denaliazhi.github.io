@@ -1,12 +1,17 @@
 import App from "./App";
 import Home from "./pages/Home";
 import Design from "./pages/Design";
+import Dabbles from "./pages/Dabbles";
 import About from "./pages/About";
 import NotFound from "./pages/Not-Found";
 import GroceryApp from "./pages/Project-Grocery-App";
 import HaikuHunt from "./pages/Project-Haiku-Hunt";
 import Orbitl from "./pages/Project-Orbitl";
 import OdinProject from "./pages/The-Odin-Project";
+import Orbitl2 from "./pages/Project-Orbitl-2";
+import AmenuveveWebsite from "./pages/Project-Amenuveve-Website";
+import AmenuveveCatalogue from "./pages/Project-Amenuveve-Catalogue";
+import AdiffGraphics from "./pages/Project-Adiff";
 
 const routes = [
   {
@@ -19,27 +24,47 @@ const routes = [
         element: <Home />,
       },
       {
-        path: "/About",
-        element: <About />,
-      },
-      {
-        path: "/Design",
+        path: "/design",
         element: <Design />,
       },
       {
-        path: "/ESL-Grocery-Shop",
+        path: "/dabbles",
+        element: <Dabbles />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/esl-grocery-shop",
         element: <GroceryApp />,
       },
       {
-        path: "/Haiku-Hunt",
+        path: "/haiku-hunt",
         element: <HaikuHunt />,
       },
       {
-        path: "/Orbitl",
+        path: "/orbitl",
         element: <Orbitl />,
       },
       {
-        path: "/The-Odin-Project",
+        path: "/orbitl-website",
+        element: <Orbitl2 />,
+      },
+      {
+        path: "/amenuveve-website",
+        element: <AmenuveveWebsite />,
+      },
+      {
+        path: "/amenuveve-catalogue",
+        element: <AmenuveveCatalogue />,
+      },
+      {
+        path: "/adiff-graphics",
+        element: <AdiffGraphics />,
+      },
+      {
+        path: "/the-odin-project",
         element: <OdinProject />,
       },
     ],

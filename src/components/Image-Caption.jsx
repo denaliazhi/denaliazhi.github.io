@@ -1,4 +1,5 @@
 export default function ImageCaption({
+  id = null,
   image,
   imageStyle = "scrapbook",
   dimensions = {
@@ -7,16 +8,19 @@ export default function ImageCaption({
   },
 }) {
   return (
-    <figure
-      className={`image-caption ${imageStyle}`}
-    >
+    <figure className={`image-caption ${imageStyle}`} id={id}>
+      {imageStyle === "modern-top" ? (
+        <figcaption>{image.caption}</figcaption>
+      ) : null}
       <img
         src={image.src}
         alt={image.alt}
         height={dimensions.height}
         width={dimensions.width}
       />
-      <figcaption>{image.caption}</figcaption>
+      {imageStyle === "modern-top" ? null : (
+        <figcaption>{image.caption}</figcaption>
+      )}
     </figure>
   );
 }

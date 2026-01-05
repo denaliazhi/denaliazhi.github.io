@@ -501,12 +501,9 @@ footer > a > p:hover {
   line-height: 100%;
 }
 
-.hero h2 {
-  font-family: var(--sans-serif);
-  font-weight: normal;
-  letter-spacing: 1px;
-  line-height: 1;
+.hero-text p {
   margin-top: 2rem;
+  font-size: var(--H2);
 }
 
 .hero-text h1:first-child {
@@ -573,6 +570,34 @@ footer > a > p:hover {
   left: 5rem;
   top: -1rem;
   width: max-content;
+}
+
+#project-categories {
+  margin: auto;
+}
+
+#project-categories ul {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+#project-categories a {
+  padding: 0.4rem 1rem 0.3rem;
+  background-color: var(--darker-background);
+  border-radius: var(--rounded);
+  outline: none;
+  transition: outline 100ms ease-in-out;
+}
+
+#project-categories a:not(.selected):hover {
+  cursor: pointer;
+  outline: 2px dashed var(--main);
+}
+
+#project-categories .selected {
+  outline: 2px solid var(--main);
 }
 
 /* --------------- Home Page: Projects --------------- */
@@ -680,198 +705,16 @@ footer > a > p:hover {
   padding: 1rem 0;
 }
 
-/* --------------- Home Page: Marquee --------------- */
-
-.marquee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-#marquee-controller {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-#marquee-controller button {
-  height: 1rem;
-  width: 2rem;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  cursor: pointer;
-  transition: transform 100ms ease-in-out;
-}
-#marquee-controller button:hover {
-  transform: scale(1.2);
-}
-#marquee-controller input[type="range"] {
-  --thumb-image: none;
-  --thumb-height: 12px;
-  --thumb-color: var(--main);
-  --thumb-outline: 5px solid var(--background);
-
-  width: 10rem;
-  height: 1px;
-  direction: rtl;
-
-  border: 1px solid var(--main);
-  cursor: pointer;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-}
-#marquee-controller input[type="range" i]::-webkit-slider-thumb {
-  height: var(--thumb-height);
-  aspect-ratio: 1;
-
-  background-color: var(--thumb-color);
-  border-radius: 50%;
-  outline: var(--thumb-outline);
-  box-shadow: none;
-
-  background-image: var(--thumb-image);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  -webkit-appearance: none;
-  appearance: none;
-}
-#marquee-controller input[type="range"]::-moz-range-thumb {
-  height: 30px;
-  width: 30px;
-
-  background-color: transparent;
-  box-shadow: none;
-  background-image: var(--thumb-image);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.marquee-text {
-  position: relative;
-  width: 100vw;
-  overflow-x: hidden;
-
-  border-bottom: 3px dashed rgba(var(--black), 0.1);
-
-  display: flex;
-  gap: 0.2rem;
-}
-.marquee-text p {
-  min-width: max-content;
-
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  animation: scroll linear infinite forwards;
-}
-.marquee-text p::before {
-  content: "";
-  display: inline-block;
-  width: 3rem;
-  height: 2rem;
-  margin-left: 3rem;
-  margin-bottom: -0.1rem;
-
-  background-image: url("/home/train.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(1.2);
-}
-
-/* --------------- Home Page: Pitch --------------- */
-#pitch {
-  padding: 15vh 0;
-  background-color: var(--main);
-
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-template-rows: repeat(3, min-content);
-  gap: 3rem;
-}
-
-#elevator-scroll {
-  top: 0;
-
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
-  margin-left: 2rem;
-  width: 2px;
-  height: 100%;
-  background-color: white;
-}
-
-#pitch > div:not(#elevator-scroll) {
-  position: relative;
-  width: min(100%, 50rem);
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-#pitch div > * {
-  color: var(--background);
-  width: 23rem;
-}
-
-#pitch h2 {
-  font-weight: 500;
-  font-family: var(--sans-serif);
-}
-
-#pitch div:nth-child(1) {
-  gap: 1.5rem;
-}
-
-#pitch div:nth-child(1) > p:first-of-type {
-  font-size: 3rem;
-  font-weight: 700;
-  font-family: var(--serif);
-  line-height: 100%;
-}
-
-#pitch div:nth-child(2) {
-  align-self: flex-end;
-}
-
-#vacuum {
-  position: absolute;
-  max-width: 12rem;
-  height: auto;
-  right: 9rem;
-  top: -8rem;
-  filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.4));
-}
-
 /* ------------ Design Page ------------- */
 
-.design {
-  text-align: center;
-}
-
-#design-projects-container {
+.design .projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
 
-.overlay-card {
+.design .overlay-card {
   position: relative;
   color: white;
   text-align: left;
@@ -1679,6 +1522,20 @@ footer > a > p:hover {
   border-bottom-right-radius: var(--rounded);
 }
 
+.modern-top img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.modern-top figcaption {
+  font-size: var(--S);
+  line-height: 0.6;
+  padding: 1rem;
+  background-color: rgba(var(--black), 0.1);
+  border-top-left-radius: var(--rounded);
+  border-top-right-radius: var(--rounded);
+}
+
 /* --------------- Project Page: Grocery App --------------- */
 .grocery-app > article > .callout h3 {
   font-family: var(--serif);
@@ -1773,7 +1630,6 @@ td ul li::marker {
 }
 
 .project-details {
-  margin-top: -2rem;
   border: transparent;
   border-radius: var(--rounded);
   overflow: hidden;

@@ -6,7 +6,6 @@ import Callout from "../components/Callout";
 import TwoCol from "../components/Two-Col";
 import OneCol from "../components/One-Col";
 import Accordion from "../components/Accordion";
-import ImageCaption from "../components/Image-Caption";
 import ButtonBar from "../components/Button-Bar";
 import { useRef } from "react";
 
@@ -23,30 +22,8 @@ export default function Orbitl() {
           type={project.type}
           tools={project.tools}
         />
-        <table className="project-details">
-          <thead>
-            <tr>
-              <th>Project Type</th>
-              <th>Timeframe</th>
-              <th>Scope</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Initial website</td>
-              <td>1 week</td>
-              <td>
-                <ul>
-                  <li>Design</li>
-                  <li>Branding</li>
-                  <li>Copywriting</li>
-                  <li>Development</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <Carousel images={project.images_featured}></Carousel>
+
         <OneCol id="background">
           <h2>Background</h2>
           <p>
@@ -57,11 +34,34 @@ export default function Orbitl() {
             </span>{" "}
             while limiting its exposure to competitors .
           </p>
+          <table className="project-details">
+            <thead>
+              <tr>
+                <th>Project Type</th>
+                <th>Timeframe</th>
+                <th>Scope</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Initial website</td>
+                <td>1 week</td>
+                <td>
+                  <ul>
+                    <li>Design</li>
+                    <li>Branding</li>
+                    <li>Copywriting</li>
+                    <li>Development</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </OneCol>
         <hr />
         <OneCol id="design">
           <h2>Design</h2>
-          <h3>Wireframes</h3>
+          <h3 id="wireframes">Wireframes</h3>
           <p>
             Based on the client's requirements, I designed two views for its
             initial website.

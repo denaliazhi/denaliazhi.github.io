@@ -1,0 +1,51 @@
+import { design_projects } from "../data/design-projects";
+import ProjectHeader2 from "../components/Project-Header-2";
+import ProjectNav from "../components/Project-Nav";
+import ImageCaption from "../components/Image-Caption";
+import { useRef } from "react";
+
+export default function Orbitl2() {
+  const project = design_projects.orbitl_website;
+  const articleRef = useRef(null);
+
+  return (
+    <main className="project-page">
+      <article ref={articleRef}>
+        <ProjectHeader2
+          title={project.client}
+          role={project.role}
+          scope={project.tags}
+          desc={project.desc}
+        />
+        <ImageCaption
+          id="landing-page"
+          imageStyle="modern-top"
+          image={{
+            src: "/design_projects/orbitl-landing-page.png",
+            caption: "Landing Page",
+          }}
+        />
+        <ImageCaption
+          id="home-page"
+          imageStyle="modern-top"
+          image={{
+            src: "/design_projects/orbitl-home-page.png",
+            caption: "Home Page",
+          }}
+        />
+        {/* <OneCol id="testimonial">
+          <h2>Testimonial</h2>
+        </OneCol> */}
+      </article>
+      <ProjectNav
+        anchorBase="orbitl"
+        sections={[
+          "Landing Page",
+          "Home Page",
+          // "Testimonial",
+        ]}
+        articleRef={articleRef}
+      />
+    </main>
+  );
+}

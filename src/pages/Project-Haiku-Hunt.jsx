@@ -59,8 +59,8 @@ export default function HaikuHunt() {
             }
           />
           <hr />
-          <OneCol id="task">
-            <h2>The (Original) Task</h2>
+          <OneCol id="the-task">
+            <h2>The Task</h2>
             <p>
               During this leg of my web development journey, I'd moved from the
               frontend to the backend. I spent a month{" "}
@@ -108,7 +108,7 @@ export default function HaikuHunt() {
             </div>
           </OneCol>
           <hr />
-          <OneCol id="take">
+          <OneCol id="my-take">
             <h2>My Take</h2>
             <p>
               I decided to merge the above assignments into a more polished
@@ -252,7 +252,7 @@ export default function HaikuHunt() {
               }}
             />
             <p>
-              Unlike my <a href="/ESL-Grocery-Shop">ESL Grocery Shop</a> app,
+              Unlike my <a href="/esl-grocery-shop">ESL Grocery Shop</a> app,
               where I'd scaled the entire view to fit it on mobile devices, I
               prioritized a <span className="highlight">responsive layout</span>{" "}
               that could adjust to different screen widths.
@@ -296,7 +296,7 @@ export default function HaikuHunt() {
               such as <code>passport-local</code> to authenticate users and{" "}
               <code>express-validator</code> to validate clue submissions.
             </p>
-            <h3 id="objectives">Future objectives</h3>
+            <h3 id="future-objectives">Future objectives</h3>
             <p>
               During development, I seemed to generate an ever-growing list of
               potential features and improvements. Two items of particular
@@ -349,11 +349,11 @@ export default function HaikuHunt() {
             </ButtonBar>
           </OneCol>
           <hr />
-          <OneCol id="thoughts">
+          <OneCol id="final-thoughts">
             <h2>Final Thoughts</h2>
             <p>
               A few months ago, I was writing{" "}
-              <a href="/The-Odin-Project">static websites</a> in pure HTML and
+              <a href="/the-odin-project">static websites</a> in pure HTML and
               CSS. I'm proud of how much I've learned to reach this point of
               building full-stack web apps. At the same time, I realize more
               than ever how much I have yet to learn. The future is at once
@@ -361,7 +361,7 @@ export default function HaikuHunt() {
               exciting. 🙂
             </p>
           </OneCol>
-          <a href="/ESL-Grocery-Shop">
+          <a href="/esl-grocery-shop">
             <Callout
               icon="/projects/grocery-cover.png"
               content={{
@@ -375,7 +375,7 @@ export default function HaikuHunt() {
           anchorBase="haiku"
           sections={[
             "Background",
-            "The (Original) Task",
+            "The Task",
             "My Take",
             ["Data", ["Schema", "Acquisition", "Transformation"]],
             "Design",

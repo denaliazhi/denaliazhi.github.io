@@ -5,7 +5,7 @@ import { dev_projects } from "../data/dev-projects";
 export default function Home() {
   return (
     <main className="home">
-      <Hero />
+      <Hero selected="Developer" />
       <ProjectsContainer content={dev_projects} />
     </main>
   );

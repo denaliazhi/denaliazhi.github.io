@@ -28,7 +28,7 @@ export default function About() {
         id="other-works"
         ratio={[1, 1]}
         col1={
-          <a href="/The-Odin-Project">
+          <a href="/the-odin-project">
             <Callout
               icon="/odin-projects/etch-a-sketch.png"
               content={{

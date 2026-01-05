@@ -12,9 +12,9 @@ export default function ProjectsContainer({ content }) {
 
   return (
     <section className="projects">
-      <a href="#latest-projects" onClick={handleClick}>
+      {/* <a href="#latest-projects" onClick={handleClick}>
         <h2>Read about my latest work</h2>
-      </a>
+      </a> */}
       <div id="latest-projects" ref={projectsRef}>
         {Object.values(content).map((project) => {
           return (
@@ -25,7 +25,7 @@ export default function ProjectsContainer({ content }) {
               //     : null
               // }
               key={project.title}
-              href={`/${project.title.replaceAll(" ", "-")}`}
+              href={`/${project.title.toLowerCase().replaceAll(" ", "-")}`}
             >
               <ProjectCard
                 project={{

@@ -1,35 +1,19 @@
 import { useState } from "react";
 
-export default function ProjectNav({
-  sections,
-  articleRef,
-}) {
-  const [showNav, setShowNav] = useState(
-    window.innerWidth > 1000
-  );
+export default function ProjectNav({ sections, articleRef }) {
+  const [showNav, setShowNav] = useState(window.innerWidth > 1000);
 
-  const [activeSection, setActiveSection] =
-    useState(null);
+  const [activeSection, setActiveSection] = useState(null);
   if (activeSection) {
     // Update URL hash based on active section of article
-    history.pushState(
-      null,
-      "",
-      "#" + activeSection
-    );
+    history.pushState(null, "", "#" + activeSection);
   }
 
   // Update active section if nav clicked
   function handleClick(e) {
     e.preventDefault();
-    const identifier = e.target.id.replace(
-      "-anchor",
-      ""
-    );
-    const sectionNode =
-      articleRef.current.querySelector(
-        `#${identifier}`
-      );
+    const identifier = e.target.id.replace("-anchor", "");
+    const sectionNode = articleRef.current.querySelector(`#${identifier}`);
     sectionNode.scrollIntoView({
       behavior: "smooth",
     });
@@ -38,7 +22,7 @@ export default function ProjectNav({
 
   // Create id for anchor link based on section name
   function createAnchor(name) {
-    return name.split(" ").at(-1).toLowerCase();
+    return name.replaceAll(" ", "-").toLowerCase();
   }
 
   // Toggle table of contents on mobile
@@ -48,10 +32,7 @@ export default function ProjectNav({
 
   return (
     <>
-      <div
-        class="project-nav-icon"
-        onClick={handleNav}
-      >
+      <div class="project-nav-icon" onClick={handleNav}>
         {showNav ? "Close" : "Table of contents"}
       </div>
       {showNav && (
@@ -62,16 +43,12 @@ export default function ProjectNav({
               let anchorLink;
               // Section has subheadings
               if (Array.isArray(heading)) {
-                anchorLink = createAnchor(
-                  heading[0]
-                );
+                anchorLink = createAnchor(heading[0]);
                 return (
                   <li
                     key={anchorLink}
                     className={
-                      anchorLink === activeSection
-                        ? "selected-anchor"
-                        : null
+                      anchorLink === activeSection ? "selected-anchor" : null
                     }
                   >
                     <a
@@ -83,53 +60,38 @@ export default function ProjectNav({
                     </a>
                     {/* Nest subheadings under heading */}
                     <ul>
-                      {heading[1].map(
-                        (subheading) => {
-                          const subLink =
-                            createAnchor(
-                              subheading
-                            );
-                          return (
-                            <a
-                              key={subLink}
-                              href={`#${subLink}`}
-                              onClick={
-                                handleClick
+                      {heading[1].map((subheading) => {
+                        const subLink = createAnchor(subheading);
+                        return (
+                          <a
+                            key={subLink}
+                            href={`#${subLink}`}
+                            onClick={handleClick}
+                          >
+                            <li
+                              className={
+                                subLink === activeSection
+                                  ? "selected-anchor"
+                                  : null
                               }
+                              id={`${subLink}-anchor`}
                             >
-                              <li
-                                className={
-                                  subLink ===
-                                  activeSection
-                                    ? "selected-anchor"
-                                    : null
-                                }
-                                id={`${subLink}-anchor`}
-                              >
-                                {subheading}
-                              </li>
-                            </a>
-                          );
-                        }
-                      )}
+                              {subheading}
+                            </li>
+                          </a>
+                        );
+                      })}
                     </ul>
                   </li>
                 );
                 // Section doesn't have subheadings
               } else {
-                anchorLink =
-                  createAnchor(heading);
+                anchorLink = createAnchor(heading);
                 return (
-                  <a
-                    key={anchorLink}
-                    href={`#${anchorLink}`}
-                  >
+                  <a key={anchorLink} href={`#${anchorLink}`}>
                     <li
                       className={
-                        anchorLink ===
-                        activeSection
-                          ? "selected-anchor"
-                          : null
+                        anchorLink === activeSection ? "selected-anchor" : null
                       }
                       id={`${anchorLink}-anchor`}
                       onClick={handleClick}
