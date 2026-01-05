@@ -179,7 +179,7 @@ code {
 .tags {
   list-style: none;
   display: flex;
-  gap: 0.3rem;
+  gap: 0.8rem 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -573,18 +573,18 @@ footer > a > p:hover {
 }
 
 #project-categories {
-  margin: auto;
+  margin: 0 auto;
 }
 
 #project-categories ul {
-  margin-top: 2rem;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
 }
 
 #project-categories a {
-  padding: 0.4rem 1rem 0.3rem;
+  padding: 0.4rem 1rem;
   background-color: var(--darker-background);
   border-radius: var(--rounded);
   outline: none;
@@ -603,7 +603,7 @@ footer > a > p:hover {
 /* --------------- Home Page: Projects --------------- */
 
 .projects {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: auto;
 
   display: flex;
@@ -611,7 +611,7 @@ footer > a > p:hover {
   gap: 2rem;
 }
 
-.projects h2 {
+/* .projects h2 {
   position: relative;
   font-family: var(--sans-serif);
   font-size: var(--P);
@@ -623,26 +623,26 @@ footer > a > p:hover {
   border-radius: var(--rounded);
 
   transition: transform 300ms ease-out;
-}
+} */
 
-.projects h2::after {
+/* .projects h2::after {
   content: "";
   position: absolute;
   display: block;
   left: calc(50% - 25px);
   width: 0;
-  height: 0;
-  border-left: 25px solid transparent; /* Transparent left side */
-  border-right: 25px solid transparent; /* Transparent right side */
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
   border-top: 25px solid var(--darker-background);
 
   transition: transform 300ms ease-out;
-}
+} */
 
-.projects h2:hover,
+/* .projects h2:hover,
 .projects h2:hover::after {
   transform: translateY(5px);
-}
+} */
 
 .projects h3 {
   font-family: var(--sans-serif);
@@ -652,7 +652,7 @@ footer > a > p:hover {
 
 .projects > div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -707,17 +707,23 @@ footer > a > p:hover {
 
 /* ------------ Design Page ------------- */
 
-.design .projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+.design-projects {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
 }
 
 .design .overlay-card {
   position: relative;
   color: white;
   text-align: left;
+}
+.overlay-card img {
+  width: 100%;
+  height: auto;
 }
 .overlay {
   opacity: 0;
@@ -738,8 +744,55 @@ footer > a > p:hover {
   transition: opacity 200ms ease-in-out;
 }
 
+.overlay > :nth-child(2) {
+  margin-top: 0.5rem;
+  font-size: var(--H2);
+}
+
+.overlay :last-child {
+  margin-top: auto;
+  list-style-type: none;
+}
+
 .overlay-card:hover .overlay {
   opacity: 1;
+  cursor: pointer;
+}
+
+/* -- Design project details -- */
+
+.design-project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.design-project-header h1 {
+  margin-top: -1.5rem;
+}
+
+.project-page .design-project-header > hr {
+  margin: 0;
+}
+
+.design-project-header > div {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.design-project-header > div > h2 {
+  width: 6ch;
+  font-size: var(--H3);
+}
+
+.design-project-header > :nth-child(1) {
+  width: max-content;
+  color: var(--lighter-main);
+  transition: color 200ms ease-in-out;
+}
+.design-project-header > :nth-child(1):hover {
+  color: var(--main);
   cursor: pointer;
 }
 
@@ -1205,10 +1258,6 @@ footer > a > p:hover {
 
 .project-page h2 {
   font-weight: 800;
-}
-
-.project-page p {
-  line-height: 1.1;
 }
 
 .project-page h1 + hr {
@@ -1929,6 +1978,7 @@ td ul li::marker {
   }
 
   .project-nav-icon {
+    z-index: 5;
     display: block;
     font-size: var(--P);
     position: fixed;
@@ -1973,7 +2023,7 @@ td ul li::marker {
   }
 
   h1 {
-    font-size: 5.2rem;
+    font-size: 4.2rem;
   }
 
   /* -------- Header -------- */
@@ -2050,25 +2100,69 @@ td ul li::marker {
   /* -------- Home Page: Hero -------- */
   .home {
     gap: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 4rem 0;
   }
 
   .hero {
-    transform: scale(75%);
     max-width: 100%;
     height: auto;
     gap: 0;
   }
 
-  .greeting {
-    gap: 0;
+  .hero > div:first-child {
+    transform: scale(0.75);
+  }
+
+  .greeting h1 {
+    transform: scale(1.25);
+  }
+
+  .hero-text h1:first-child,
+  .hero-text p {
+    font-size: var(--P);
+  }
+
+  .hero-text p {
+    margin-top: 1rem;
+    width: max-content;
+  }
+
+  .hero-text {
+    margin: -2rem 0 1rem;
   }
 
   /* -------- Home Page: Projects --------- */
 
   .projects > div {
     gap: 2rem;
+  }
+
+  #project-categories {
+    margin: 0 0 2rem;
+  }
+  #project-categories a {
+    width: 100%;
+  }
+
+  .design-projects {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .overlay {
+    padding: 1rem;
+  }
+
+  .overlay h2 {
+    font-size: var(--S);
+  }
+
+  .overlay > :nth-child(2) {
+    font-size: var(--P);
+  }
+
+  .overlay li {
+    font-size: var(--S);
+    line-height: 0.8;
   }
 
   /* -------- About Page --------- */
@@ -2162,6 +2256,7 @@ td ul li::marker {
   }
 
   .project-page h1 {
+    margin-top: 1rem;
     font-size: 2rem;
   }
 
@@ -2213,6 +2308,16 @@ td ul li::marker {
   /* -------- Button Bar --------- */
   .button-bar a {
     width: 100%;
+  }
+
+  /* ----------- Design Projects ------------ */
+  .design-project-header > div > h2 {
+    font-size: var(--XS);
+  }
+
+  /* ----------- Project Page: ESL Grocery ------------- */
+  .grocery-app > article > .callout h3 {
+    font-size: var(--XS);
   }
 
   /* ------------ Project Page: Haiku Hunt ------------- */

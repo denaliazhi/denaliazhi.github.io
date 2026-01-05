@@ -7,6 +7,9 @@ export default function ProjectHeader({
 }) {
   return (
     <section className="project-header">
+      <a href="/">
+        <p>&lt; Back</p>
+      </a>
       <div>
         <h1>{title}</h1>
         {date && <p>{date}</p>}

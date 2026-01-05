@@ -10,7 +10,7 @@ export default function Design() {
         selected="Designer"
         caption="I help brands tell memorable stories"
       />
-      <section className="projects-container">
+      <section className="design-projects">
         {Object.entries(projects).map(([key, value]) => (
           <OverlayCard key_name={key} content={value} />
         ))}

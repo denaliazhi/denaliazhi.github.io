@@ -8,7 +8,7 @@ const design_projects = {
     },
     role: "Sole designer (Freelance)",
     tags: ["Branding", "Copywriting", "Web design", "Web development"],
-    desc: "Orbitl is a research management startup. I designed a website that would allow it to collect leads while hiding its core features from competitors in its early stages.",
+    desc: "Orbitl is a research management startup. I designed a website that would allow it to collect leads while hiding its core features from competitors during its early stages.",
   },
   amenuveve_website: {
     client: "Amenuveve",
