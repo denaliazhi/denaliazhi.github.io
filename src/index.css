@@ -716,7 +716,7 @@ footer > a > p:hover {
   gap: 1.5rem;
 }
 
-.design .overlay-card {
+.overlay-card {
   position: relative;
   color: white;
   text-align: left;
@@ -731,7 +731,7 @@ footer > a > p:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 98%;
   width: 100%;
   padding: 2rem;
   background-color: rgba(var(--black), 0.6);
@@ -794,6 +794,21 @@ footer > a > p:hover {
 .design-project-header > :nth-child(1):hover {
   color: var(--main);
   cursor: pointer;
+}
+
+/* ---- Dabbles Page ------ */
+.dabbles-projects {
+  max-width: 70rem;
+  margin: auto;
+  columns: 3;
+}
+
+.dabbles .overlay-card {
+  margin-bottom: 0.75rem;
+}
+
+.dabbles .overlay-card img {
+  border-radius: var(--rounded);
 }
 
 /* ------------ About Page ------------- */
@@ -2003,6 +2018,10 @@ td ul li::marker {
     backdrop-filter: blur(5px);
     outline: 2px solid var(--darker-background);
   }
+
+  .dabbles-projects {
+    columns: 2;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2163,6 +2182,10 @@ td ul li::marker {
   .overlay li {
     font-size: var(--S);
     line-height: 0.8;
+  }
+
+  .dabbles-projects {
+    columns: 1;
   }
 
   /* -------- About Page --------- */

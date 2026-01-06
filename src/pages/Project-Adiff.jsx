@@ -12,7 +12,7 @@ export default function AdiffGraphics() {
     <main className="project-page">
       <article ref={articleRef}>
         <ProjectHeader2
-          title={project.client}
+          title={project.title}
           role={project.role}
           scope={project.tags}
           desc={project.desc}
@@ -21,7 +21,7 @@ export default function AdiffGraphics() {
           id="social-media"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/adiff-social-media.png",
+            src: "/design-projects/adiff-social-media.png",
             caption: "Social media assets",
           }}
         />
@@ -29,7 +29,7 @@ export default function AdiffGraphics() {
           id="email-campaigns"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/adiff-email.png",
+            src: "/design-projects/adiff-email.png",
             caption: "Email campaigns",
           }}
         />
@@ -37,7 +37,7 @@ export default function AdiffGraphics() {
           id="website"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/adiff-website.gif",
+            src: "/design-projects/adiff-website.gif",
             caption: "Website",
           }}
         />

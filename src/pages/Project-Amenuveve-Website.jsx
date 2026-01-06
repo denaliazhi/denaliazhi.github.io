@@ -12,7 +12,7 @@ export default function AmenuveveWebsite() {
     <main className="project-page">
       <article ref={articleRef}>
         <ProjectHeader2
-          title={project.client}
+          title={project.title}
           role={project.role}
           scope={project.tags}
           desc={project.desc}
@@ -21,7 +21,7 @@ export default function AmenuveveWebsite() {
           id="preview"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-all-pages.png",
+            src: "/design-projects/amenuveve-all-pages.png",
             caption: "Preview of redesigned pages",
           }}
         />
@@ -29,7 +29,7 @@ export default function AmenuveveWebsite() {
           id="home-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-home.png",
+            src: "/design-projects/amenuveve-home.png",
             caption: "Home page",
           }}
         />
@@ -37,7 +37,7 @@ export default function AmenuveveWebsite() {
           id="donation-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-donation.png",
+            src: "/design-projects/amenuveve-donation.png",
             caption: "Donation page",
           }}
         />
@@ -45,7 +45,7 @@ export default function AmenuveveWebsite() {
           id="about-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-about.png",
+            src: "/design-projects/amenuveve-about.png",
             caption: "About page",
           }}
         />
@@ -53,7 +53,7 @@ export default function AmenuveveWebsite() {
           id="impact-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-impact.png",
+            src: "/design-projects/amenuveve-impact.png",
             caption: "Impact page",
           }}
         />
@@ -61,7 +61,7 @@ export default function AmenuveveWebsite() {
           id="get-involved-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-get-involved.png",
+            src: "/design-projects/amenuveve-get-involved.png",
             caption: "Get involved page",
           }}
         />

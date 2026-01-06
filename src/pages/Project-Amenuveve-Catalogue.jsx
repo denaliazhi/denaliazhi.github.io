@@ -12,7 +12,7 @@ export default function AmenuveveCatalogue() {
     <main className="project-page">
       <article ref={articleRef}>
         <ProjectHeader2
-          title={project.client}
+          title={project.title}
           role={project.role}
           scope={project.tags}
           desc={project.desc}
@@ -21,19 +21,19 @@ export default function AmenuveveCatalogue() {
           id="catalogue-preview"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-catalogue-cover.png",
+            src: "/design-projects/amenuveve-catalogue-cover.png",
             caption: "Product catalogue preview",
           }}
         />
         <iframe
-          src="/design_projects/amenuveve-catalogue.pdf"
+          src="/design-projects/amenuveve-catalogue.pdf"
           width="auto"
           height="530px"
           //   style="border: none;"
         >
           <p>
             Your browser does not support PDFs.{" "}
-            <a href="/design_projects/amenuveve-catalogue.pdf">
+            <a href="/design-projects/amenuveve-catalogue.pdf">
               Download the PDF
             </a>{" "}
             instead.
@@ -43,7 +43,7 @@ export default function AmenuveveCatalogue() {
           id="catalogue-viewer"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/amenuveve-catalogue-viewwer.png",
+            src: "/design-projects/amenuveve-catalogue-viewwer.png",
             caption: "Catalogue viewer",
           }}
         /> */}

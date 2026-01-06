@@ -12,7 +12,7 @@ export default function Orbitl2() {
     <main className="project-page">
       <article ref={articleRef}>
         <ProjectHeader2
-          title={project.client}
+          title={project.title}
           role={project.role}
           scope={project.tags}
           desc={project.desc}
@@ -21,7 +21,7 @@ export default function Orbitl2() {
           id="landing-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/orbitl-landing-page.png",
+            src: "/design-projects/orbitl-landing-page.png",
             caption: "Landing Page",
           }}
         />
@@ -29,7 +29,7 @@ export default function Orbitl2() {
           id="home-page"
           imageStyle="modern-top"
           image={{
-            src: "/design_projects/orbitl-home-page.png",
+            src: "/design-projects/orbitl-home-page.png",
             caption: "Home Page",
           }}
         />
