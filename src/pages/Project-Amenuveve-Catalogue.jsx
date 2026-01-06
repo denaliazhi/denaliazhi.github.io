@@ -1,6 +1,5 @@
 import { design_projects } from "../data/design-projects";
 import ProjectHeader2 from "../components/Project-Header-2";
-import ProjectNav from "../components/Project-Nav";
 import ImageCaption from "../components/Image-Caption";
 import { useRef } from "react";
 
@@ -18,7 +17,6 @@ export default function AmenuveveCatalogue() {
           desc={project.desc}
         />
         <ImageCaption
-          id="catalogue-preview"
           imageStyle="modern-top"
           image={{
             src: "/design-projects/amenuveve-catalogue-cover.png",
@@ -39,14 +37,6 @@ export default function AmenuveveCatalogue() {
             instead.
           </p>
         </iframe>
-        {/* <ImageCaption
-          id="catalogue-viewer"
-          imageStyle="modern-top"
-          image={{
-            src: "/design-projects/amenuveve-catalogue-viewwer.png",
-            caption: "Catalogue viewer",
-          }}
-        /> */}
       </article>
     </main>
   );

@@ -8,6 +8,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator", "Adobe Animate"],
+    desc: "Somewhere far...far away, a twisting tree reaches out to the universe. It's home to a curious species. These amorphous beings spend their perpetual night gathering crystals, observing planets, and playing among the stars. They seem at peace in the little space they call home.",
   },
   dreamscape: {
     title: "Dreamscape",
@@ -18,10 +19,11 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator"],
+    desc: "Counting sheep can help you sleep, but where do the sheep go? A curious girl follows one of her furry friends. Down a cool stone path through lush vegetation glistening with dew, she comes to a sign: Dreamland. What's this mysterious destination? You'll have to sleep to find out.",
   },
 
   blender_figure: {
-    title: "Figurine",
+    title: "Girl",
     subtitle: "3D model - 2021",
     img: {
       src: "/dabbles-projects/blender-figure.png",
@@ -29,6 +31,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Blender"],
+    desc: "Made with Keelan Jon's character modeling tutorial",
   },
   blender_car: {
     title: "Car",
@@ -49,6 +52,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator, Photoshop"],
+    desc: "A camper van travels across a series of fantastical landscapes.",
   },
 };
 

@@ -12,7 +12,7 @@ export default function Design() {
       />
       <section className="design-projects">
         {Object.entries(projects).map(([key, value]) => (
-          <a href={`/${key.replace("_", "-")}`}>
+          <a key={key} href={`/${key.replace("_", "-")}`}>
             <OverlayCard
               key_name={key}
               img={value.img}

@@ -17,7 +17,7 @@ export default function Dabbles() {
             img={value.img}
             title={value.title}
             subtitle={value.subtitle}
-            tags={value.tags}
+            tags={[value.desc]}
           />
         ))}
       </section>

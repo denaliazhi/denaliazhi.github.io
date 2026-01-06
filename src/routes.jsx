@@ -12,6 +12,7 @@ import Orbitl2 from "./pages/Project-Orbitl-2";
 import AmenuveveWebsite from "./pages/Project-Amenuveve-Website";
 import AmenuveveCatalogue from "./pages/Project-Amenuveve-Catalogue";
 import AdiffGraphics from "./pages/Project-Adiff";
+import AirbnbReport from "./pages/Project-Airbnb";
 
 const routes = [
   {
@@ -56,12 +57,16 @@ const routes = [
         element: <AmenuveveWebsite />,
       },
       {
-        path: "/amenuveve-catalogue",
-        element: <AmenuveveCatalogue />,
-      },
-      {
         path: "/adiff-graphics",
         element: <AdiffGraphics />,
+      },
+      {
+        path: "/airbnb-report",
+        element: <AirbnbReport />,
+      },
+      {
+        path: "/amenuveve-catalogue",
+        element: <AmenuveveCatalogue />,
       },
       {
         path: "/the-odin-project",

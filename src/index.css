@@ -796,6 +796,10 @@ footer > a > p:hover {
   cursor: pointer;
 }
 
+.design-projects .overlay-card img {
+  border-radius: var(--rounded);
+}
+
 /* ---- Dabbles Page ------ */
 .dabbles-projects {
   max-width: 70rem;
@@ -2021,6 +2025,11 @@ td ul li::marker {
 
   .dabbles-projects {
     columns: 2;
+  }
+
+  .dabble-projects .overlay li {
+    font-size: var(--S);
+    line-height: 0.8;
   }
 }
 

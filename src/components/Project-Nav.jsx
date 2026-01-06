@@ -32,7 +32,7 @@ export default function ProjectNav({ sections, articleRef }) {
 
   return (
     <>
-      <div class="project-nav-icon" onClick={handleNav}>
+      <div className="project-nav-icon" onClick={handleNav}>
         {showNav ? "Close" : "Table of contents"}
       </div>
       {showNav && (
