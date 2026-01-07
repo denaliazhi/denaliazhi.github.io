@@ -18,6 +18,14 @@ export default function Orbitl2() {
           desc={project.desc}
         />
         <ImageCaption
+          id="preview"
+          imageStyle="modern-top"
+          image={{
+            src: "/design-projects/orbitl-cover-3.png",
+            caption: "Laptop and mobile view",
+          }}
+        />
+        <ImageCaption
           id="landing-page"
           imageStyle="modern-top"
           image={{
@@ -33,6 +41,14 @@ export default function Orbitl2() {
             caption: "Home Page",
           }}
         />
+        <ImageCaption
+          id="mobile-view"
+          imageStyle="modern-top"
+          image={{
+            src: "/design-projects/orbitl-mobile.png",
+            caption: "Mobile view",
+          }}
+        />
         {/* <OneCol id="testimonial">
           <h2>Testimonial</h2>
         </OneCol> */}
@@ -40,8 +56,10 @@ export default function Orbitl2() {
       <ProjectNav
         anchorBase="orbitl"
         sections={[
+          "Preview",
           "Landing Page",
           "Home Page",
+          "Mobile View",
           // "Testimonial",
         ]}
         articleRef={articleRef}
