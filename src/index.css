@@ -14,12 +14,12 @@
 
   /* Font sizing */
   --H1: 5rem;
-  --H2: 2rem;
-  --H3: 1.5rem;
-  --P: 1.7rem;
-  --S: 1.5rem;
-  --XS: 1rem;
-  --XXS: 0.8rem;
+  --H2: 1.4rem;
+  --H3: 1.2rem;
+  --P: 1rem;
+  --S: 0.8rem;
+  --XS: 0.6rem;
+  --XXS: 0.4rem;
 }
 
 * {
@@ -38,6 +38,16 @@ html {
 /* --------- Fonts ----------- */
 
 @font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/Fraunces.ttf");
+}
+
+@font-face {
+  font-family: "Gantari";
+  src: url("/fonts/Gantari.ttf");
+}
+
+/* @font-face {
   font-family: "Chivo";
   src: url("/fonts/Chivo.ttf");
 }
@@ -78,13 +88,13 @@ html {
 @font-face {
   font-family: "Hedvig";
   src: url("/fonts/Hedvig.ttf");
-}
+} */
 
 /* --------- General styling ----------- */
 
 body {
-  --serif: "Funnel Display", "Times New Roman", Times, serif;
-  --sans-serif: "Dongle", system-ui, sans-serif;
+  --serif: "Fraunces", "Times New Roman", Times, serif;
+  --sans-serif: "Gantari", system-ui, sans-serif;
 
   font-family: var(--sans-serif);
   text-wrap: pretty;
