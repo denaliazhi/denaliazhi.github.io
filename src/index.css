@@ -379,13 +379,35 @@ header {
   opacity: 1;
   margin-left: 0.1rem;
   transform: skewX(0);
-  transition: opacity var(--logo-transition), margin-left var(--logo-transition),
+  transition:
+    opacity var(--logo-transition),
+    margin-left var(--logo-transition),
     transform var(--logo-transition);
 }
 
 .logo.icon + div > p {
   font-size: var(--S);
   line-height: 0.7rem;
+}
+
+.mode-nav {
+  background: var(--darker-background);
+  border-radius: var(--rounded);
+  position: absolute;
+  display: flex;
+  list-style: none;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+.mode-nav li {
+  padding: 0.5rem 1rem;
+}
+
+.selected-mode {
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
 }
 
 .nav-icon {
@@ -664,7 +686,9 @@ footer > a > p:hover {
   flex-direction: column;
   gap: 0.3rem;
 
-  transition: transform 300ms ease-in-out, outline 300ms ease-in-out;
+  transition:
+    transform 300ms ease-in-out,
+    outline 300ms ease-in-out;
 }
 
 .projects > div a:not(.wip):hover {
@@ -1014,7 +1038,9 @@ footer > a > p:hover {
   width: 8rem;
   right: 0;
   filter: drop-shadow(var(--shadow)) saturate(0);
-  transition: filter 200ms ease-in-out, transform 300ms ease-in-out;
+  transition:
+    filter 200ms ease-in-out,
+    transform 300ms ease-in-out;
 }
 #other-works div:nth-child(1) .icon {
   top: 0;

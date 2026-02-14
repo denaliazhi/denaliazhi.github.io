@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function HeaderNav({ items }) {
   const [isOpen, setIsOpen] = useState(true);
-  const [screenWidth, setScreenWidth] = useState(
-    window.innerWidth
-  );
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const BREAKPOINT = 600;
 
   useEffect(() => {
@@ -17,15 +15,9 @@ export default function HeaderNav({ items }) {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
-    window.addEventListener(
-      "resize",
-      handleResize
-    );
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener(
-        "resize",
-        handleResize
-      );
+      window.removeEventListener("resize", handleResize);
     };
   }, [screenWidth]);
 
@@ -36,12 +28,8 @@ export default function HeaderNav({ items }) {
   return (
     <nav>
       <button
-        className={
-          isOpen ? "nav-icon x-mark" : "nav-icon"
-        }
-        aria-label={
-          isOpen ? "Close menu" : "Open menu"
-        }
+        className={isOpen ? "nav-icon x-mark" : "nav-icon"}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
         onClick={handleClick}
       >
         <div></div>
@@ -49,15 +37,13 @@ export default function HeaderNav({ items }) {
         <div></div>
       </button>
       {isOpen && (
-        <li className="nav-items">
+        <ul className="nav-items">
           {items.map((item) => (
-            <ul key={item}>
-              <a href={`/${item.toLowerCase()}`}>
-                <li>{item}</li>
-              </a>
-            </ul>
+            <a key={item} href={`/${item.toLowerCase()}`}>
+              <li>{item}</li>
+            </a>
           ))}
-        </li>
+        </ul>
       )}
     </nav>
   );
