@@ -6,10 +6,7 @@ export default function Dabbles() {
   const projects = dabbles_projects;
   return (
     <main className="home dabbles">
-      <Hero
-        selected="Dabbler in the arts"
-        caption="I play around in my free time"
-      />
+      <Hero />
       <section className="dabbles-projects">
         {Object.entries(projects).map(([key, value]) => (
           <OverlayCard

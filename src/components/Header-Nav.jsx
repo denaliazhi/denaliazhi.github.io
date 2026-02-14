@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router";
 
 export default function HeaderNav({ items }) {
+  const location = useLocation().pathname;
+
   const [isOpen, setIsOpen] = useState(true);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const BREAKPOINT = 600;
@@ -25,6 +28,14 @@ export default function HeaderNav({ items }) {
     setIsOpen(!isOpen);
   };
 
+  const modes = [
+    { name: "Designer", url: "design" },
+    { name: "Developer", url: "" },
+    { name: "Dabbler", url: "dabbles" },
+  ];
+
+  const menuItems = [{ name: "About", url: "about" }];
+
   return (
     <nav>
       <button
@@ -36,15 +47,37 @@ export default function HeaderNav({ items }) {
         <div></div>
         <div></div>
       </button>
-      {isOpen && (
-        <ul className="nav-items">
-          {items.map((item) => (
-            <a key={item} href={`/${item.toLowerCase()}`}>
-              <li>{item}</li>
+
+      {screenWidth > BREAKPOINT && (
+        <ul className="mode-nav">
+          {modes.map((m) => (
+            <a key={m.name} href={`/${m.url}`}>
+              <li className={location === `/${m.url}` ? "selected-mode" : null}>
+                {m.name}
+              </li>
             </a>
           ))}
         </ul>
       )}
+
+      {isOpen &&
+        (screenWidth < BREAKPOINT ? (
+          <ul className="nav-items">
+            {[...modes, ...menuItems].map((m) => (
+              <a key={m.name} href={`/${m.url}`}>
+                <li>{m.name}</li>
+              </a>
+            ))}
+          </ul>
+        ) : (
+          <ul className="nav-items">
+            {menuItems.map((m) => (
+              <a key={m.name} href={`/${m.url}`}>
+                <li>{m.name}</li>
+              </a>
+            ))}
+          </ul>
+        ))}
     </nav>
   );
 }

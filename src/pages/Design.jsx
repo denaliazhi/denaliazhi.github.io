@@ -6,10 +6,7 @@ export default function Design() {
   const projects = design_projects;
   return (
     <main className="home design">
-      <Hero
-        selected="Designer"
-        caption="I help brands tell memorable stories"
-      />
+      <Hero />
       <section className="design-projects">
         {Object.entries(projects).map(([key, value]) => (
           <a key={key} href={`/${key.replace("_", "-")}`}>
