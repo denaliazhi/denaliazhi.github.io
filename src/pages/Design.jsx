@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import OverlayCard from "../components/Overlay-Card";
+import DesignCard from "../components/Design-Card";
 import { design_projects } from "../data/design-projects";
 
 export default function Design() {
@@ -10,9 +10,10 @@ export default function Design() {
       <section className="design-projects">
         {Object.entries(projects).map(([key, value]) => (
           <a key={key} href={`/${key.replace("_", "-")}`}>
-            <OverlayCard
+            <DesignCard
               key_name={key}
               img={value.img}
+              bg_img={value.bg_img}
               title={value.title}
               subtitle={value.subtitle}
               tags={value.tags}

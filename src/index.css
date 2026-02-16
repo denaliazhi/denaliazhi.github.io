@@ -625,47 +625,61 @@ footer > a > p:hover {
   gap: 1.5rem;
 }
 
-.overlay-card {
-  position: relative;
+.design-card {
   color: white;
-  text-align: left;
-}
-.overlay-card img {
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  opacity: 0;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 98%;
-  width: 100%;
-  padding: 2rem;
-  background-color: rgba(var(--black), 0.6);
-  backdrop-filter: blur(2px);
   border-radius: var(--rounded);
-
-  display: flex;
-  flex-direction: column;
-
-  transition: opacity 200ms ease-in-out;
+  height: 100%;
 }
 
-.overlay > :nth-child(2) {
-  margin-top: 0.5rem;
-  font-size: var(--H2);
+.design-card > div:first-of-type {
+  padding: 3rem;
+  height: calc(100% - 67.6px);
 }
 
-.overlay :last-child {
-  margin-top: auto;
-  list-style-type: none;
+.design-card img {
+  width: 100%;
+  height: 266px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  transition: transform 200ms ease-in-out;
 }
 
-.overlay-card:hover .overlay {
-  opacity: 1;
-  cursor: pointer;
+.design-card:hover img {
+  transform: rotate(3deg);
+}
+
+.design-card h2 {
+  font-family: var(--sans-serif);
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.design-card h2 + p {
+  line-height: 1.3;
+}
+
+.design-card > div:last-of-type {
+  padding: 1rem;
+  border-bottom-left-radius: var(--rounded);
+  border-bottom-right-radius: var(--rounded);
+}
+
+.design-card .tags li {
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+}
+
+#orbitl_website > div:last-of-type {
+  background-color: rgba(27, 44, 58, 0.5);
+}
+
+#amenuveve_website > div:last-of-type {
+  background-color: rgba(29, 42, 21, 0.5);
+}
+
+#funn_website > div:last-of-type {
+  background-color: rgba(71, 25, 37, 0.5);
 }
 
 /* -- Design project details -- */
