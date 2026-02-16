@@ -3,6 +3,7 @@ const design_projects = {
     title: "Reshaping the future of research",
     subtitle:
       "A clean launch for a research management startup built by scientists for their peers",
+    client: "Orbitl",
     img: {
       src: "/design-projects/orbitl-product-mockup.png",
       alt: "Cover of research startup website",
