@@ -8,7 +8,6 @@ import GroceryApp from "./pages/Project-Grocery-App";
 import HaikuHunt from "./pages/Project-Haiku-Hunt";
 import Orbitl from "./pages/Project-Orbitl";
 import OdinProject from "./pages/The-Odin-Project";
-import Orbitl2 from "./pages/Project-Orbitl-2";
 import AmenuveveWebsite from "./pages/Project-Amenuveve-Website";
 import AmenuveveCatalogue from "./pages/Project-Amenuveve-Catalogue";
 import AdiffGraphics from "./pages/Project-Adiff";
@@ -45,12 +44,8 @@ const routes = [
         element: <HaikuHunt />,
       },
       {
-        path: "/orbitl",
-        element: <Orbitl />,
-      },
-      {
         path: "/orbitl-website",
-        element: <Orbitl2 />,
+        element: <Orbitl />,
       },
       {
         path: "/amenuveve-website",

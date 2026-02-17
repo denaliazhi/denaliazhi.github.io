@@ -12,7 +12,7 @@ export default function ProjectHeader2({ title, desc, img, metadata }) {
       <div className="design-project-metadata">
         {metadata.map((item) => (
           <div>
-            <h2>{item.field}</h2>
+            <h2>{item.field.toUpperCase()}</h2>
             <p>{item.value}</p>
           </div>
         ))}

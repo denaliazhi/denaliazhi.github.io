@@ -3,7 +3,6 @@
 export default function ProjectTimeline({ contents }) {
   return (
     <section className="design-project-timeline">
-      <h2>Timeline</h2>
       <div>
         {contents.map((period) => (
           <div>

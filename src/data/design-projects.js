@@ -5,13 +5,13 @@ const design_projects = {
       "A clean launch for a research management startup built by scientists for their peers",
     client: "Orbitl",
     img: {
-      src: "/design-projects/orbitl-product-mockup.png",
+      src: "/design-projects/orbitl-website/orbitl-product-mockup.png",
       alt: "Cover of research startup website",
       width: "580",
       height: "386",
     },
     bg_img: {
-      src: "/design-projects/orbitl-bg.png",
+      src: "/design-projects/orbitl-website/orbitl-bg.png",
     },
     role: "Web Designer",
     tags: ["Website", "Client", "2026"],
@@ -21,13 +21,13 @@ const design_projects = {
     title: "Encouraging educational play",
     subtitle: "A colorful mobile game showcase with a message for all ages",
     img: {
-      src: "/design-projects/funn-product-mockup.png",
+      src: "/design-projects/funn-website/funn-product-mockup.png",
       alt: "Cover of game studio website",
       width: "545",
       height: "390",
     },
     bg_img: {
-      src: "/design-projects/funn-bg.png",
+      src: "/design-projects/funn-website/funn-bg.png",
     },
     role: "Web Designer",
     tags: ["Website", "Client", "2026"],
@@ -38,13 +38,13 @@ const design_projects = {
     subtitle:
       "Reimagining my original published work for this nonprofit three years later",
     img: {
-      src: "/design-projects/amenuveve-product-mockup.png",
+      src: "/design-projects/amenuveve-website/amenuveve-product-mockup.png",
       alt: "Cover of nonprofit website",
       width: "545",
       height: "390",
     },
     bg_img: {
-      src: "/design-projects/amenuveve-bg.png",
+      src: "/design-projects/amenuveve-website/amenuveve-bg.png",
     },
     role: "Web Designer",
     tags: ["Website", "Concept", "2025"],
@@ -54,13 +54,13 @@ const design_projects = {
   //   title: "ADIFF",
   //   subtitle: "Email / Social Media Content",
   //   img: {
-  //     src: "/design-projects/adiff-cover.png",
+  //     src: "/design-projects/orbitl-website/adiff-cover.png",
   //     alt: "Social media graphics featuring different products",
   //     width: "642",
   //     height: "390",
   //   },
   //   bg_img: {
-  //     src: "/design-projects/orbitl-blue-bg.png",
+  //     src: "/design-projects/orbitl-website/orbitl-blue-bg.png",
   //     alt: "Cover of research startup website",
   //     width: "642",
   //     height: "390",
@@ -73,13 +73,13 @@ const design_projects = {
   //   title: "Airbnb",
   //   subtitle: "Business / Data Analysis Report",
   //   img: {
-  //     src: "/design-projects/airbnb-report-cover.png",
+  //     src: "/design-projects/orbitl-website/airbnb-report-cover.png",
   //     alt: "Slides from an Airbnb themed business report",
   //     width: "642",
   //     height: "390",
   //   },
   //   bg_img: {
-  //     src: "/design-projects/orbitl-blue-bg.png",
+  //     src: "/design-projects/orbitl-website/orbitl-blue-bg.png",
   //     alt: "Cover of research startup website",
   //     width: "642",
   //     height: "390",
@@ -92,13 +92,13 @@ const design_projects = {
   //   title: "Amenuveve",
   //   subtitle: "Product Catalogue",
   //   img: {
-  //     src: "/design-projects/amenuveve-catalogue-cover.png",
+  //     src: "/design-projects/orbitl-website/amenuveve-catalogue-cover.png",
   //     alt: "Cover of product catalogue for artisan goods",
   //     width: "642",
   //     height: "390",
   //   },
   //   bg_img: {
-  //     src: "/design-projects/orbitl-blue-bg.png",
+  //     src: "/design-projects/orbitl-website/orbitl-blue-bg.png",
   //     alt: "Cover of research startup website",
   //     width: "642",
   //     height: "390",
