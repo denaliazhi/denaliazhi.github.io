@@ -8,7 +8,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator", "Adobe Animate"],
-    desc: "Somewhere far...far away, a twisting tree reaches out to the universe. It's home to a curious species. These amorphous beings spend their perpetual night gathering crystals, observing planets, and playing among the stars. They seem at peace in the little space they call home.",
+    desc: "Somewhere far...far away, a twisting tree reaches out to the universe. This little 'space' is home to a family of curious creatures, who spend their perpetual night gathering crystals, observing planets, and playing among the stars.",
   },
   dreamscape: {
     title: "Dreamscape",
@@ -19,7 +19,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator"],
-    desc: "Counting sheep can help you sleep, but where do the sheep go? A curious girl follows one of her furry friends. Down a cool stone path through lush vegetation glistening with dew, she comes to a sign: Dreamland. What's this mysterious destination? You'll have to sleep to find out.",
+    desc: "'Count sheep to fall asleep.' But where do the sheep go? One night, a young girl decides to find out. She follows one of her furry friends down a cool stone path, through lush vegetation glistening with dew. She comes to a cryptic sign: Dreamland. What could it be? You'll have to sleep to find out.",
   },
 
   blender_figure: {
@@ -52,7 +52,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator", "Photoshop"],
-    desc: "A camper van travels across a series of fantastical landscapes.",
+    desc: "A camper van ventures across a series of fantastical landscapes.",
   },
 };
 
