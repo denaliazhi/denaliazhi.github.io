@@ -8,7 +8,7 @@ const dabbles_projects = {
       width: "100",
     },
     tags: ["Adobe Illustrator", "Adobe Animate"],
-    desc: "Somewhere far...far away, a twisting tree reaches out to the universe. This little 'space' is home to a family of curious creatures, who spend their perpetual night gathering crystals, observing planets, and playing among the stars.",
+    desc: "Somewhere far...far away, a twisting tree reaches out to the universe. This little 'space' is home to a family of curious creatures, who spend their night gathering crystals, observing planets, and playing among the stars.",
   },
   dreamscape: {
     title: "Dreamscape",
