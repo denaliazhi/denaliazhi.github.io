@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import OverlayCard from "../components/Overlay-Card";
+import ArtCard from "../components/Art-Card";
 import { dabbles_projects } from "../data/dabbles-projects";
 
 export default function Dabbles() {
@@ -9,13 +9,7 @@ export default function Dabbles() {
       <Hero />
       <section className="dabbles-projects">
         {Object.entries(projects).map(([key, value]) => (
-          <OverlayCard
-            key_name={key}
-            img={value.img}
-            title={value.title}
-            subtitle={value.subtitle}
-            tags={[value.desc]}
-          />
+          <ArtCard key_name={key} content={value} />
         ))}
       </section>
     </main>

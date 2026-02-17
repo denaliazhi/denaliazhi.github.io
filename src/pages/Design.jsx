@@ -11,7 +11,7 @@ export default function Design() {
         {Object.entries(projects).map(([key, value]) => (
           <a key={key} href={`/${key.replace("_", "-")}`}>
             <DesignCard
-              key_name={key}
+              key_name={key.replace("_", "-")}
               img={value.img}
               bg_img={value.bg_img}
               title={value.title}

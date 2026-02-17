@@ -1,7 +1,7 @@
 const dabbles_projects = {
   space_tree: {
     title: "Space Tree",
-    subtitle: "Animation - 2020",
+    subtitle: "Animation, 2020",
     img: {
       src: "/dabbles-projects/space-tree.gif",
       alt: "Animated illustration of a space tree",
@@ -12,7 +12,7 @@ const dabbles_projects = {
   },
   dreamscape: {
     title: "Dreamscape",
-    subtitle: "Illustration - 2020",
+    subtitle: "Illustration, 2020",
     img: {
       src: "/dabbles-projects/dreamscape.png",
       alt: "Illustration of girl in a dreamscape",
@@ -24,7 +24,7 @@ const dabbles_projects = {
 
   blender_figure: {
     title: "Girl",
-    subtitle: "3D model - 2021",
+    subtitle: "3D model, 2021",
     img: {
       src: "/dabbles-projects/blender-figure.png",
       alt: "3D model of a girl with pink hair",
@@ -35,7 +35,7 @@ const dabbles_projects = {
   },
   blender_car: {
     title: "Car",
-    subtitle: "3D model - 2021",
+    subtitle: "3D model, 2021",
     img: {
       src: "/dabbles-projects/blender-car.png",
       alt: "3D model of a pink car",
@@ -45,13 +45,13 @@ const dabbles_projects = {
   },
   vw_journey: {
     title: "The Journey",
-    subtitle: "Animation (series) - 2019",
+    subtitle: "Animation (series), 2019",
     img: {
       src: "/dabbles-projects/journey-full.gif",
       alt: "A camper van driving by a lake at sunset",
       width: "100",
     },
-    tags: ["Adobe Illustrator, Photoshop"],
+    tags: ["Adobe Illustrator", "Photoshop"],
     desc: "A camper van travels across a series of fantastical landscapes.",
   },
 };

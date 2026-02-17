@@ -40,6 +40,7 @@ export default function Orbitl() {
         </ProjectSection>
         <hr />
         <ProjectSection section="Timeline">
+          <p>The timeline for the initial landing page was just one week.</p>
           <ProjectTimeline
             contents={[
               {
@@ -219,6 +220,11 @@ export default function Orbitl() {
               caption: "Blah",
             }}
           />
+          <p>
+            I've continued to work on the website since its first launch. You
+            can view the latest design here:
+          </p>
+          <a href="https://orbitl.info">Visit the live website</a>
         </ProjectSection>
       </article>
       <ProjectNav

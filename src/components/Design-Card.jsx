@@ -6,7 +6,6 @@ export default function DesignCard({
   subtitle = false,
   tags = false,
 }) {
-  console.log(bg_img);
   return (
     <article
       className="design-card"
