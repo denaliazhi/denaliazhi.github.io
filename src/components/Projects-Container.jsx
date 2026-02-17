@@ -35,7 +35,7 @@ export default function ProjectsContainer({ content }) {
                   },
                   title: project.title,
                   desc: project.desc_short,
-                  tags: [...project.type, ...project.tools],
+                  tags: project.tools,
                 }}
               />
             </a>

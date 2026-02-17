@@ -589,6 +589,9 @@ footer > a > p:hover {
 .projects .modern figcaption {
   text-align: left;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .projects .modern figcaption h2 {
@@ -1229,6 +1232,11 @@ footer > a > p:hover {
   justify-content: center;
 }
 
+.project-page p,
+.project-page li {
+  line-height: 1.5;
+}
+
 .project-nav {
   opacity: 0.7;
   position: sticky;
@@ -1492,7 +1500,7 @@ footer > a > p:hover {
 
 /* --------------- Accordion --------------- */
 .accordion {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   border: 2px dashed rgba(var(--black), 0.25);
   border-radius: var(--rounded);
 
@@ -1586,11 +1594,11 @@ footer > a > p:hover {
 .image-caption figcaption {
   text-align: center;
   font-size: var(--P);
+  line-height: 1.2;
 }
 
 .scrapbook figcaption {
   font-size: var(--S);
-  line-height: 0.9;
   padding: 0.5rem 1rem;
   background-image: url("/decorative/tape.png");
   background-size: cover;
@@ -1606,7 +1614,6 @@ footer > a > p:hover {
 
 .modern figcaption {
   font-size: var(--S);
-  line-height: 0.9;
   padding: 1rem;
   background-color: rgba(var(--black), 0.1);
   border-bottom-left-radius: var(--rounded);
@@ -1620,7 +1627,6 @@ footer > a > p:hover {
 
 .modern-top figcaption {
   font-size: var(--S);
-  line-height: 0.6;
   padding: 1rem;
   background-color: rgba(var(--black), 0.1);
   border-top-left-radius: var(--rounded);
@@ -1654,8 +1660,7 @@ footer > a > p:hover {
 /* --------------- Project Page: Grocery App --------------- */
 .grocery-app > article > .callout h3 {
   font-family: var(--serif);
-  font-size: var(--S);
-  line-height: 1.5;
+  font-size: var(--P);
   font-weight: 800;
 }
 
@@ -1738,23 +1743,12 @@ td ul li::marker {
   margin-top: 1rem;
 }
 
-/* ------------ Odin Projects Page ------------- */
+/* ------------ Odin Projects Section ------------- */
 
 .odin {
-  max-width: 60rem;
-  text-align: center;
-  margin: auto;
-  padding: 0 2rem;
-  gap: 2rem;
-}
-
-.odin h1 {
-  font-size: var(--S);
-}
-
-.odin > p {
-  margin: 0 auto 1rem;
-  max-width: 70ch;
+  padding: 3rem;
+  border: 2px solid var(--main);
+  border-radius: var(--rounded);
 }
 
 .odin > p a {
@@ -1772,12 +1766,12 @@ td ul li::marker {
   position: relative;
 }
 
-.odin .projects .tags li:first-child {
+.odin .tags li:first-child {
   font-size: var(--XS);
   position: absolute;
   top: 0;
   right: 50%;
-  transform: translate(50%, -10%);
+  transform: translate(50%, -5%);
   background: none;
 }
 
