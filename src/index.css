@@ -14,10 +14,10 @@
 
   /* Font sizing */
   --H1: 5rem;
-  --H2: 1.6rem;
+  --H2: clamp(1.2rem, 3vw, 1.6rem);
   --H3: 1.4rem;
-  --P: 1.1rem;
-  --S: 1rem;
+  --P: clamp(0.9rem, 2vw, 1.1rem);
+  --S: clamp(0.75rem, 1.7vw, 1rem);
   --XS: 0.8rem;
   --XXS: 0.6rem;
 }
@@ -479,6 +479,7 @@ footer > div:first-child,
   gap: 0.5rem;
 }
 
+footer > div:first-child p,
 .socials h3 {
   opacity: 0.7;
   font-family: var(--sans-serif);
@@ -840,7 +841,7 @@ footer > div:first-child,
 }
 
 #letter-to-user {
-  width: 30rem;
+  max-width: 30rem;
   margin: auto;
   margin-bottom: 2rem;
   display: flex;
@@ -1038,7 +1039,6 @@ footer > div:first-child,
 
 #artifacts figure:not(#headshot) p {
   font-size: var(--S);
-  max-width: 15ch;
 }
 #artifacts figure:nth-child(2) {
   margin-top: 2rem;
@@ -1740,7 +1740,7 @@ td ul li::marker {
   main,
   main.project-page {
     max-width: 100%;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
   }
 
   h1 {
@@ -1821,6 +1821,7 @@ td ul li::marker {
   .home {
     gap: 0;
     padding: 4rem 0;
+    margin: 0 1rem 4rem;
   }
 
   .hero {
@@ -1867,10 +1868,6 @@ td ul li::marker {
     margin: 0;
   }
 
-  #artifacts figcaption p {
-    line-height: 0.7;
-  }
-
   #headshot {
     order: 5;
     justify-content: center;
@@ -1901,10 +1898,18 @@ td ul li::marker {
 
   /* --------- Odin Page ------- */
   .odin {
+    width: 100%;
     text-align: left;
-    margin-top: 2rem;
-    padding: 2rem;
-    border: 2px solid var(--darker-background);
+    margin-top: 4rem;
+    padding: 0.5rem;
+    border: none;
+    outline: 2px solid var(--darker-background);
+    outline-offset: 1rem;
+    border-radius: 0.1rem;
+  }
+
+  .projects > div {
+    grid-template-columns: 1fr;
   }
 
   /* -------- Project Page --------- */
@@ -1984,6 +1989,13 @@ td ul li::marker {
   .design-card img {
     height: auto;
   }
+  .design-card > div:first-of-type {
+    padding: 1rem;
+  }
+
+  .design-projects {
+    grid-template-columns: 1fr;
+  }
 
   .design-project-header > div > h2 {
     font-size: var(--XS);
@@ -1997,6 +2009,16 @@ td ul li::marker {
 
   .quote {
     flex-wrap: wrap;
+  }
+
+  .tags li {
+    font-size: var(--S);
+  }
+
+  .project-page .callout:last-of-type p {
+    margin-top: 0.2rem;
+    line-height: 1.2;
+    font-size: var(--S);
   }
 
   /* ----------- Project Page: ESL Grocery ------------- */

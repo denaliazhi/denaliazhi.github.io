@@ -45,10 +45,10 @@ export default function About() {
             🔍 background
           </HoverableText>{" "}
           spanning the arts, business, and computer science, I've set pieces of
-          all shapes and sizes into place. I think of myself as a translator who
-          bridges the gaps between creative ideas, technical execution, and
-          strategic communication. For at its heart, solving a puzzle is an act
-          of translation.
+          all shapes and sizes into place. I like to think of my role as a
+          translator— bridging the gaps between creative ideas, technical
+          execution, and strategic communication— for at its heart, solving a
+          puzzle is an act of translation.
         </p>
       </div>
       <Artifacts></Artifacts>

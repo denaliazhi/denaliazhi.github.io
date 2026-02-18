@@ -9,16 +9,9 @@ export default function Footer() {
       </div>
       <div className="socials">
         <h3>Reach me via</h3>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/denaliazhi/"
-          aria-label="LinkedIn"
-        >
-          LinkedIn
-        </a>
-        <a id="github" href="https://github.com/denaliazhi" aria-label="Github">
-          Github
-        </a>
+        <a href="mailto:denaliazhi@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/denaliazhi/">LinkedIn</a>
+        <a href="https://github.com/denaliazhi">Github</a>
       </div>
     </footer>
   );
