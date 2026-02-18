@@ -62,13 +62,16 @@ export default function HeaderNav({ items }) {
 
       {isOpen && (
         <ul className="nav-items">
-          {screenWidth < BREAKPOINT &&
-            modes.map((m) => (
-              <a key={m.name} href={`/${m.url}`}>
-                <li>{m.name}</li>
-              </a>
-            ))}
-          <hr />
+          {screenWidth < BREAKPOINT && (
+            <>
+              {modes.map((m) => (
+                <a key={m.name} href={`/${m.url}`}>
+                  <li>{m.name}</li>
+                </a>
+              ))}
+              <hr />
+            </>
+          )}
           {menuItems.map((m) => (
             <a key={m.name} href={`/${m.url}`}>
               <li>{m.name}</li>
