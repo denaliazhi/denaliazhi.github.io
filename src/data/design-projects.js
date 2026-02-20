@@ -19,7 +19,8 @@ const design_projects = {
   },
   funn_website: {
     title: "Encouraging educational play",
-    subtitle: "A colorful mobile game showcase with a message for all ages",
+    subtitle: "A colorful showcase for an indie mobile games studio",
+    client: "FuNn Interactive",
     img: {
       src: "/design-projects/funn-website/funn-product-mockup.png",
       alt: "Cover of game studio website",
@@ -30,13 +31,15 @@ const design_projects = {
       src: "/design-projects/funn-website/funn-bg.png",
     },
     role: "Web Designer",
-    tags: ["Website", "Client", "2026"],
+    //"Website", "Client", "2026",
+    tags: ["Coming Soon"],
     desc: "",
   },
   amenuveve_website: {
     title: "Connecting a remote community to a global audience",
     subtitle:
       "Reimagining my original published work for this nonprofit three years later",
+    client: "Amenuveve",
     img: {
       src: "/design-projects/amenuveve-website/amenuveve-product-mockup.png",
       alt: "Cover of nonprofit website",

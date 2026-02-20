@@ -3,12 +3,12 @@ import ProjectCard from "./Project-Card";
 
 export default function ProjectsContainer({ content }) {
   const projectsRef = useRef();
-  const handleClick = (e) => {
-    e.preventDefault();
-    projectsRef.current.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   projectsRef.current.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <section className="projects">
@@ -19,11 +19,6 @@ export default function ProjectsContainer({ content }) {
         {Object.values(content).map((project) => {
           return (
             <a
-              // className={
-              //   project.title === "Orbitl"
-              //     ? "wip"
-              //     : null
-              // }
               key={project.title}
               href={`/${project.title.toLowerCase().replaceAll(" ", "-")}`}
             >

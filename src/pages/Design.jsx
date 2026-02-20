@@ -9,7 +9,15 @@ export default function Design() {
       <Hero />
       <section className="design-projects">
         {Object.entries(projects).map(([key, value]) => (
-          <a key={key} href={`/${key.replace("_", "-")}`}>
+          <a
+            key={key}
+            href={
+              value.client === "FuNn Interactive"
+                ? null
+                : `/${key.replace("_", "-")}`
+            }
+            className={value.client === "FuNn Interactive" ? "wip" : null}
+          >
             <DesignCard
               key_name={key.replace("_", "-")}
               img={value.img}

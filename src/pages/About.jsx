@@ -21,8 +21,8 @@ export default function About() {
           “How do we turn our vision for this product into reality?”
         </p>{" "}
         <p>
-          I've tackled this question in various forms: as a designer for
-          startups, as a{" "}
+          I've tackled this question in many forms: as a designer for startups
+          and a nonprofit, as a{" "}
           <HoverableText
             img={{
               src: "/about/bloomberg-puzzle.png",
@@ -31,8 +31,8 @@ export default function About() {
           >
             🔍 data analyst
           </HoverableText>{" "}
-          at a multi-billion dollar company, as a freelancer (team of 1), and as
-          a collaborator (team of 30+).{" "}
+          for a multinational company, as a freelancer (team of 1), and as a
+          collaborator (team of 30+).{" "}
         </p>
         <p>
           With a{" "}
@@ -44,11 +44,10 @@ export default function About() {
           >
             🔍 background
           </HoverableText>{" "}
-          spanning the arts, business, and computer science, I've set pieces of
-          all shapes and sizes into place. I like to think of my role as a
-          translator— bridging the gaps between creative ideas, technical
-          execution, and strategic communication— for at its heart, solving a
-          puzzle is an act of translation.
+          spanning the arts, business, and computer science, I am a translator—
+          bridging the gaps between creative ideas, strategic communication, and
+          technical execution— for at its heart, solving a puzzle is an act of
+          translation.
         </p>
       </div>
       <Artifacts></Artifacts>
