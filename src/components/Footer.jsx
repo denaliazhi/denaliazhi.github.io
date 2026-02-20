@@ -1,24 +1,17 @@
 export default function Footer() {
   return (
     <footer>
-      <a href="/Secret">
-        <p>This site was made by a squirrel 🐿️</p>
-      </a>
+      <div>
+        <h2>Thanks for stopping by.</h2>
+        <a href="/Secret">
+          <p>( Pssst...this site was made by a squirrel 🐿️ )</p>
+        </a>
+      </div>
       <div className="socials">
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/denaliazhi/"
-          aria-label="LinkedIn"
-        >
-          <span className="icon"></span>
-        </a>
-        <a
-          id="github"
-          href="https://github.com/denaliazhi"
-          aria-label="Github"
-        >
-          <span className="icon"></span>
-        </a>
+        <h3>Reach me via</h3>
+        <a href="mailto:denaliazhi@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/denaliazhi/">LinkedIn</a>
+        <a href="https://github.com/denaliazhi">Github</a>
       </div>
     </footer>
   );

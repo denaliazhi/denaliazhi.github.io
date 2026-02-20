@@ -19,9 +19,9 @@ export default function ProjectHeader({
         {tools.map((tool) => (
           <li key={`${title} - ${tool}`}>{tool}</li>
         ))}
-        {type.map((item) => (
+        {/* {type.map((item) => (
           <li key={`${title} - ${item}`}>{item}</li>
-        ))}
+        ))} */}
       </ul>
       {desc && <p>{desc}</p>}
     </section>

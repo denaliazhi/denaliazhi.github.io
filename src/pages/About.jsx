@@ -1,78 +1,56 @@
-import TwoCol from "../components/Two-Col";
-import Callout from "../components/Callout";
-import Timeline from "../components/Timeline";
 import Artifacts from "../components/Artifacts";
 import { toolkit } from "../data/toolkit";
-import { personalTimeline } from "../data/personal-timeline";
+import HoverableText from "../components/Hoverable-Text";
 
 export default function About() {
   return (
     <main className="about">
-      <h1>About</h1>
-      <Artifacts></Artifacts>
-      <TwoCol
-        id="journey"
-        ratio={[3, 4]}
-        col1={
-          <>
-            <h2>How'd I get here?</h2>
-            <p>
-              When I was 12, I wrote my first computer program...just kidding.
-            </p>
-            <p>(Read time: 1 minute)</p>
-          </>
-        }
-        col2={<Timeline contents={personalTimeline} />}
-      />
-      <TwoCol
-        id="other-works"
-        ratio={[1, 1]}
-        col1={
-          <a href="/the-odin-project">
-            <Callout
-              icon="/odin-projects/etch-a-sketch.png"
-              content={{
-                heading: "The Odin Project",
-                body: ["Five months of learning web development"],
-              }}
-            />
-          </a>
-        }
-        col2={
-          <a href="https://denaliazhi.github.io/portfolio-v2/projects.html">
-            <Callout
-              icon="/about/old-portfolio.png"
-              content={{
-                heading: "Data + Design Archive",
-                body: ["Projects from my college-era"],
-              }}
-            />
-          </a>
-        }
-      />
-
-      <div id="toolkit">
-        <h2>My toolkit</h2>
-        <p>Hover or tap on an icon for its label.</p>
-        {Object.entries(toolkit).map((category) => (
-          <div key={category[0]}>
-            <h3>{category[0][0].toUpperCase() + category[0].slice(1)}</h3>
-            <ul>
-              {category[1].map((item) => (
-                <li key={item.tool}>
-                  <span
-                    className="icon"
-                    style={{
-                      backgroundImage: `url(${item.icon})`,
-                    }}
-                  ></span>
-                  <p>{item.tool}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div id="letter-to-user">
+        <h1>Hi, I'm Denalia.</h1>
+        <p>
+          I love to solve puzzles— whether the puzzle is a 1,000-piece{" "}
+          <HoverableText
+            img={{
+              src: "/about/costco-puzzle.png",
+              alt: "Dowdle's 1000-piece Costco jigsaw puzzle",
+            }}
+          >
+            🔍 jigsaw of Costco
+          </HoverableText>{" "}
+          (America's favorite warehouse) or something a bit more complex like
+          “How do we turn our vision for this product into reality?”
+        </p>{" "}
+        <p>
+          I've tackled this question in many forms: as a designer for startups
+          and a nonprofit, as a{" "}
+          <HoverableText
+            img={{
+              src: "/about/bloomberg-puzzle.png",
+              alt: "Denalia shaking hands with Michael Bloomberg",
+            }}
+          >
+            🔍 data analyst
+          </HoverableText>{" "}
+          for a multinational company, as a freelancer (team of 1), and as a
+          collaborator (team of 30+).{" "}
+        </p>
+        <p>
+          With a{" "}
+          <HoverableText
+            img={{
+              src: "/about/nyu-puzzle.png",
+              alt: "Graduation photo outside NYU building",
+            }}
+          >
+            🔍 background
+          </HoverableText>{" "}
+          spanning the arts, business, and computer science, I am a translator—
+          bridging the gaps between creative ideas, strategic communication, and
+          technical execution— for at its heart, solving a puzzle is an act of
+          translation.
+        </p>
       </div>
+      <Artifacts></Artifacts>
     </main>
   );
 }

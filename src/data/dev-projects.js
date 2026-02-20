@@ -46,20 +46,6 @@ const dev_projects = {
     type: ["Personal"],
     tools: ["React"],
   },
-  orbitl: {
-    title: "Orbitl",
-    date: "Nov 2025",
-    desc_short: "A clean launch for a research startup",
-    desc_long: "I built the first website for a research management startup.",
-    images_featured: [
-      {
-        src: "orbitl-cover.png",
-        alt: "Cover of research startup website",
-      },
-    ],
-    type: ["Client"],
-    tools: ["Wordpress"],
-  },
 };
 
 export { dev_projects };

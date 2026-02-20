@@ -1,263 +1,242 @@
-import { dev_projects } from "../data/dev-projects";
-import ProjectHeader from "../components/Project-Header";
+import { design_projects } from "../data/design-projects";
+import ProjectHeader2 from "../components/Project-Header-2";
 import ProjectNav from "../components/Project-Nav";
-import Carousel from "../components/Carousel";
-import Callout from "../components/Callout";
-import TwoCol from "../components/Two-Col";
-import OneCol from "../components/One-Col";
-import Accordion from "../components/Accordion";
-import ButtonBar from "../components/Button-Bar";
+import ProjectSection from "../components/Project-Section";
+import ProjectTimeline from "../components/Project-Timeline";
+import ProjectQuote from "../components/Project-Quote";
+import ImageCaption from "../components/Image-Caption";
 import { useRef } from "react";
 
 export default function Orbitl() {
-  const project = dev_projects.orbitl;
+  const project = design_projects.orbitl_website;
   const articleRef = useRef(null);
 
   return (
-    <main className="orbitl project-page">
+    <main className="project-page orbitl-website design-project">
       <article ref={articleRef}>
-        <ProjectHeader
-          title={project.title}
-          date={project.date}
-          type={project.type}
-          tools={project.tools}
+        <ProjectHeader2
+          title={project.client}
+          desc={project.subtitle}
+          img={{
+            src: "/design-projects/orbitl-website/orbitl-hero-img.png",
+            alt: "Laptop and mobile view",
+          }}
+          metadata={[
+            { field: "Type", value: "Freelance" },
+            { field: "Role", value: "Web Designer" },
+            { field: "Timeline", value: "Nov 2025 - Present" },
+            { field: "Tools", value: "Figma, WordPress" },
+          ]}
         />
-        <Carousel images={project.images_featured}></Carousel>
+        <ProjectSection section="Overview" title={project.title}>
+          <p>
+            Orbitl is an AI-native startup on a mission to fix the tedium and
+            fragmentation of modern science workflows.
+          </p>
+          <p className="design-callout">
+            My <span className="bold">task</span> was to translate this vision
+            into a cohesive brand identity and a compelling landing page.
+          </p>
+        </ProjectSection>
+        <hr />
+        <ProjectSection section="Timeline">
+          <p>The timeline for the initial landing page was just one week.</p>
+          <ProjectTimeline
+            contents={[
+              {
+                days: "1 - 2",
+                events: [
+                  {
+                    title: "Discovery call",
+                    desc: (
+                      <p>Understand client's needs, product, and audience</p>
+                    ),
+                  },
+                  {
+                    title: "Branding workshop",
+                    desc: (
+                      <p>Define brand personality using mission and values</p>
+                    ),
+                  },
+                ],
+              },
+              {
+                days: "3 - 4",
+                events: [
+                  {
+                    title: "Copywriting",
+                    desc: <p>Write and edit content</p>,
+                  },
+                  {
+                    title: "Wireframes",
+                    desc: <p>Determine content layout</p>,
+                  },
+                  {
+                    title: "Visual branding",
+                    desc: (
+                      <ul>
+                        <li>Select fonts / color palette</li>
+                        <li>Create custom assets</li>
+                      </ul>
+                    ),
+                  },
+                ],
+              },
+              {
+                days: "5 - 7",
+                events: [
+                  {
+                    title: "Mockups",
+                    desc: <p>Refine and finalize design</p>,
+                  },
 
-        <OneCol id="background">
-          <h2>Background</h2>
-          <p>
-            Orbitl was an early-stage startup that wanted to
-            <span className="highlight">
-              {" "}
-              establish its online presence and collect leads
-            </span>{" "}
-            while limiting its exposure to competitors .
-          </p>
-          <table className="project-details">
-            <thead>
-              <tr>
-                <th>Project Type</th>
-                <th>Timeframe</th>
-                <th>Scope</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Initial website</td>
-                <td>1 week</td>
-                <td>
-                  <ul>
-                    <li>Design</li>
-                    <li>Branding</li>
-                    <li>Copywriting</li>
-                    <li>Development</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </OneCol>
+                  {
+                    title: "Development",
+                    desc: (
+                      <ul>
+                        <li>Build site in WordPress</li>
+                        <li>Integrate plug-ins</li>
+                        <li>Test and deploy site</li>
+                      </ul>
+                    ),
+                  },
+                ],
+              },
+            ]}
+          />
+        </ProjectSection>
+
         <hr />
-        <OneCol id="design">
-          <h2>Design</h2>
-          <h3 id="wireframes">Wireframes</h3>
+        <ProjectSection
+          section="Challenge"
+          title="Balancing facts and feelings"
+        >
           <p>
-            Based on the client's requirements, I designed two views for its
-            initial website.
+            The primary goal of the landing page was to generate leads among
+            scientists and investors, suggesting a minimalist design focused on
+            creating clarity and credibility around the product. At the same
+            time, the branding needed to feel personal rather than
+            transactional.
           </p>
-          <img
-            src="projects/orbitl-wireframes.png"
-            alt="Wireframes for landing page and home page of website"
-            height="458"
-            width="756"
-          />
-          <TwoCol
-            id="view-comparison"
-            ratio={[1, 1]}
-            col1={
-              <>
-                <h4>Landing page</h4>
-                <p>Default view for all users</p>
-                <div>
-                  <h5>Actions</h5>
-                  <ul>
-                    <li>Schedule demo</li>
-                    <li>Join waitlist</li>
-                    <li>Sign in</li>
-                  </ul>
-                  <h5>Goals</h5>
-                  <ul>
-                    <li>Collect leads</li>
-                    <li>Limit competitor access</li>
-                  </ul>
-                </div>
-              </>
-            }
-            col2={
-              <>
-                <h4>Home page</h4>
-                <p>Password-protected view</p>
-                <div>
-                  <h5>Actions</h5>
-                  <ul>
-                    <li>Schedule demo</li>
-                    <li>Submit general inquiry</li>
-                  </ul>
-                  <h5>Goals</h5>
-                  <ul>
-                    <li>Build credibility</li>
-                    <li>Establish brand identity</li>
-                    <li>Showcase product features</li>
-                  </ul>
-                </div>
-              </>
-            }
-          />
-        </OneCol>
-        <OneCol id="branding">
-          <h3>Branding</h3>
-          <p>
-            I worked with the client to define a brand identity that would
-            connect with scientists and academic researchers. We selected colors
-            and fonts to strike a balance between knowledge, authority, and
-            approachability.
-          </p>
-          <TwoCol
-            id="visual-elements"
-            ratio={[1, 2]}
-            col1={
-              <ul id="colors">
-                <li>#254D32</li>
-                <li>#94BFA7</li>
-                <li>#222E50</li>
-                <li>#5299D3</li>
-              </ul>
-            }
-            col2={
-              <ul id="fonts">
-                <li>
-                  <p>Focus on breakthroughs, not busywork</p>
-                  <p>Heading 1</p>
-                </li>
-                <li>
-                  <p>Manage your entire process in one place</p>
-                  <p>Heading 2</p>
-                </li>
-                <li>
-                  <p>Meet Orb, your AI assistant</p>
-                  <p>Heading 3</p>
-                </li>
-                <li>
-                  <p>
-                    Ask questions, find historical data, and understand
-                    experimental trends with intelligent insights.
-                  </p>
-                  <p>Body</p>
-                </li>
-              </ul>
-            }
-          />
-        </OneCol>
-        <OneCol id="copywriting">
-          <h3>Copywriting</h3>
-          <p>
-            The client wanted to use language that was " concise" but also to
-            "show that [they] cared" about their fellow scientists. Accordingly,
-            I distilled their existing messaging into short, personable
-            statements for the web.
-          </p>
-          <Accordion heading="Example">
-            <div className="copy">
-              <h4>Original copy</h4>
+
+          <ProjectQuote
+            img={{
+              src: "design-projects/orbitl-website/shree-headshot.png",
+              alt: "Headshot of Shree Patel",
+            }}
+            title={["Shree", "Co-founder"]}
+            quote={
               <p>
-                Academic scientists are bogged down by repetitive, low-value
-                tasks that drain time and slow scientific progress. Managing
-                experiments, data, and collaboration across fragmented systems
-                makes it difficult to stay organized and reproduce results. In a
-                world that needs science to solve its largest problems, we
-                cannot afford for research to move slowly. Orbitl is an
-                intelligent, AI-native platform that supports the entire
-                research journey — from finding funding and exploring literature
-                to running experiments, analyzing data, and publishing results.
+                Scientists aren't companies who care about "ROI."{" "}
+                <span className="bold">
+                  They're people who want the bandwidth to focus on what excites
+                  them.
+                </span>{" "}
+                Orbitl stands for a return to curiosity and exploration instead
+                of burnout.
               </p>
-            </div>
-            <div className="copy">
-              <h4>Website copy</h4>
-              <p>
-                The world needs science to solve its biggest problems.
-                Scientists shouldn't have to solve a fragmented system for
-                experiments, data, and collaborations.
-              </p>
-              <p>
-                Orbitl supports you throughout your research journey, making
-                it easier to stay organized and reproduce results.
-              </p>
-            </div>
-          </Accordion>
-        </OneCol>
-        <OneCol id="digital-assets">
-          <h3>Digital assets</h3>
-          <p>
-            Finally, the client stated, "A lot of software in the research space
-            is outdated. We want to build a solution that's sleek, modern, and
-            intuitive." I designed assets that would match the product's desired
-            look and feel to its website.
-          </p>
-          <img
-            src="projects/orbitl-custom-assets.png"
-            alt="A custom illustration of the product dashboard"
+            }
           />
-        </OneCol>
-        <OneCol id="mockups">
-          <h3>Mockups</h3>
-          <p>
-            After rounds of feedback and refinement, I assembled the elements of
-            the website into a cohesive and compelling pitch for the product.
+
+          <p className="design-callout">
+            The <span className="bold">challenge</span> was to build a concise
+            landing page that had both logical and emotional appeal. The page
+            needed to utilize the limited content of a pre-seed startup and be
+            ready to publish within one week.
           </p>
-          <img src="projects/orbitl-mockups.png" alt="Website mockups" />
-        </OneCol>
+        </ProjectSection>
         <hr />
-        <OneCol id="development">
-          <h2>Development</h2>
+        <ProjectSection section="Messaging" title="Establishing credibility">
           <p>
-            I developed the website using HTML, CSS, and JS. The result is
-            mobile responsive.
-          </p>
-          {/* <p>
-            Due to time constraints, backend functionalities such as a waitlist
-            sign up were enabled through links to third party platforms instead
-            of built into the website.
+            As a pre-seed startup without success metrics, Orbitl's{" "}
+            <span className="bold">
+              founding story would serve as a crucial source of credibility
+            </span>
+            . Both founders were scientists, who were driven to create the
+            product by their frustrations with lab work and a desire to improve
+            the experience for their peers.
           </p>
           <p>
-            The website is hosted on Github Pages under a custom domain. The
-            next stage is to migrate the website to Wordpress to enable
-            analytics and plugins.
-          </p> */}
-          <img
-            src="projects/orbitl-walkthrough.gif"
-            alt="Walkthrough of website"
+            I channeled that desire into messaging that was{" "}
+            <span className="bold">direct, knowledgeable, and empathetic.</span>
+          </p>
+          <ImageCaption
+            imageStyle="modern"
+            image={{
+              src: "/design-projects/orbitl-website/orbitl-wireframes.png",
+              caption: "Wireframes with copy",
+            }}
           />
-        </OneCol>
-        {/* <OneCol id="testimonial">
-          <h2>Testimonial</h2>
-        </OneCol> */}
+        </ProjectSection>
+        <hr />
+        <ProjectSection
+          section="Visuals"
+          title="Blending traditional and modern elements"
+        >
+          <p>
+            <span className="bold">Typography. </span>Serif headers mirror the
+            style of research publications, evoking a sense of{" "}
+            <span className="bold">trust and authority</span>, while a
+            sans-serif body modernizes the look.
+          </p>
+          <ImageCaption
+            imageStyle="modern"
+            image={{
+              src: "/design-projects/orbitl-website/orbitl-typography.png",
+              caption: "A mix of serif and sans-serif fonts",
+            }}
+          />
+          <p>
+            <span className="bold">Colors. </span>The color palette symbolizes{" "}
+            <span className="bold">
+              knowledge, curiosity, exploration, and discovery
+            </span>
+            . A dark green was selected as the primary color for Orbitl's logo
+            and CTAs to differentiate it from competitors.
+          </p>
+          <ImageCaption
+            imageStyle="modern"
+            image={{
+              src: "/design-projects/orbitl-website/orbitl-colors.png",
+              caption: "Colors evoking scientific values",
+            }}
+          />
+        </ProjectSection>
+        <hr />
+        <ProjectSection section="Website demo" title="Pitching the product">
+          <p>
+            The final page positions Orbitl as an innovative solution to a
+            longstanding problem in science. Its layout mirrors a classic pitch
+            so that investors can easily identify the product's core features
+            and the competency of its founding team. Beyond these practical
+            points, its aspirational branding aims to connect more deeply with
+            the scientific community and garner excitement about the future of
+            research.
+          </p>
+          <ImageCaption
+            imageStyle="modern"
+            image={{
+              src: "/design-projects/orbitl-website/orbitl-demo.png",
+              caption: "Blah",
+            }}
+          />
+          <p>
+            I've continued to work on the website since its first launch. You
+            can view the latest design here:
+          </p>
+          <a href="https://orbitl.info">Visit the live website</a>
+        </ProjectSection>
       </article>
       <ProjectNav
         anchorBase="orbitl"
         sections={[
-          "Background",
-          [
-            "Design",
-            [
-              "Wireframes",
-              "Branding",
-              "Copywriting",
-              "Digital Assets",
-              "Mockups",
-            ],
-          ],
-          "Development",
+          "Overview",
+          "Timeline",
+          "Challenge",
+          "Messaging",
+          "Visuals",
+          "Website Demo",
+          "Summary",
           // "Testimonial",
         ]}
         articleRef={articleRef}

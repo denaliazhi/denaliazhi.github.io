@@ -10,7 +10,8 @@ export default function Header() {
         <p>enalia</p>
         <p>hi</p>
       </div>
-      <HeaderNav items={["About"]} />
+
+      <HeaderNav />
     </header>
   );
 }

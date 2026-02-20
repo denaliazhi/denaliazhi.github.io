@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router";
 
 export default function HeaderNav({ items }) {
+  const location = useLocation().pathname;
+
   const [isOpen, setIsOpen] = useState(true);
-  const [screenWidth, setScreenWidth] = useState(
-    window.innerWidth
-  );
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const BREAKPOINT = 600;
 
   useEffect(() => {
@@ -17,15 +18,9 @@ export default function HeaderNav({ items }) {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
-    window.addEventListener(
-      "resize",
-      handleResize
-    );
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener(
-        "resize",
-        handleResize
-      );
+      window.removeEventListener("resize", handleResize);
     };
   }, [screenWidth]);
 
@@ -33,31 +28,56 @@ export default function HeaderNav({ items }) {
     setIsOpen(!isOpen);
   };
 
+  const modes = [
+    { name: "Designer", url: "design" },
+    { name: "Developer", url: "" },
+    { name: "Dabbler", url: "dabbles" },
+  ];
+
+  const menuItems = [{ name: "About", url: "about" }];
+
   return (
     <nav>
       <button
-        className={
-          isOpen ? "nav-icon x-mark" : "nav-icon"
-        }
-        aria-label={
-          isOpen ? "Close menu" : "Open menu"
-        }
+        className={isOpen ? "nav-icon x-mark" : "nav-icon"}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
         onClick={handleClick}
       >
         <div></div>
         <div></div>
         <div></div>
       </button>
-      {isOpen && (
-        <li className="nav-items">
-          {items.map((item) => (
-            <ul key={item}>
-              <a href={`/${item.toLowerCase()}`}>
-                <li>{item}</li>
-              </a>
-            </ul>
+
+      {screenWidth > BREAKPOINT && (
+        <ul className="mode-nav">
+          {modes.map((m) => (
+            <a key={m.name} href={`/${m.url}`}>
+              <li className={location === `/${m.url}` ? "selected-mode" : null}>
+                {m.name}
+              </li>
+            </a>
           ))}
-        </li>
+        </ul>
+      )}
+
+      {isOpen && (
+        <ul className="nav-items">
+          {screenWidth < BREAKPOINT && (
+            <>
+              {modes.map((m) => (
+                <a key={m.name} href={`/${m.url}`}>
+                  <li>{m.name}</li>
+                </a>
+              ))}
+              <hr />
+            </>
+          )}
+          {menuItems.map((m) => (
+            <a key={m.name} href={`/${m.url}`}>
+              <li>{m.name}</li>
+            </a>
+          ))}
+        </ul>
       )}
     </nav>
   );
