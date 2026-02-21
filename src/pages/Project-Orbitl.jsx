@@ -213,13 +213,7 @@ export default function Orbitl() {
             the scientific community and garner excitement about the future of
             research.
           </p>
-          <ImageCaption
-            imageStyle="modern"
-            image={{
-              src: "/design-projects/orbitl-website/orbitl-demo.png",
-              caption: "Blah",
-            }}
-          />
+          <img src="/design-projects/orbitl-website/orbitl-demo.png" />
           <p>
             I've continued to work on the website since its first launch. You
             can view the latest design here:

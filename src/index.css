@@ -7,6 +7,7 @@
   --background: rgb(var(--white));
   --darker-background: rgb(240, 240, 240);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --darker-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
 
   /* Border radius */
   --rounded: 0.7rem;
@@ -633,9 +634,10 @@ a.wip:hover {
 
 .design-card img {
   width: 100%;
-  height: 266px;
+  height: min-content;
   object-fit: contain;
   margin-bottom: 2rem;
+  border-radius: var(--rounded);
   transition: transform 200ms ease-in-out;
 }
 
@@ -675,6 +677,12 @@ a.wip:hover {
 
 #funn-website > div:last-of-type {
   background-color: rgba(71, 25, 37, 0.5);
+}
+
+#funn-website img {
+  box-shadow: var(--darker-shadow);
+  filter: saturate(1.2);
+  transform: scale(0.9);
 }
 
 /* -- Design project details -- */

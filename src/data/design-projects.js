@@ -22,7 +22,7 @@ const design_projects = {
     subtitle: "A colorful showcase for an indie mobile games studio",
     client: "FuNn Interactive",
     img: {
-      src: "/design-projects/funn-website/funn-product-mockup.png",
+      src: "/design-projects/funn-website/spell-crush-demo.gif",
       alt: "Cover of game studio website",
       width: "545",
       height: "390",
