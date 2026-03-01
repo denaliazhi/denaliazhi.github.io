@@ -12,11 +12,11 @@ export default function Design() {
           <a
             key={key}
             href={
-              value.client === "FuNn Interactive"
+              value.client === "Funn Interactive"
                 ? null
                 : `/${key.replace("_", "-")}`
             }
-            className={value.client === "FuNn Interactive" ? "wip" : null}
+            className={value.client === "Funn Interactive" ? "wip" : null}
           >
             <DesignCard
               key_name={key.replace("_", "-")}

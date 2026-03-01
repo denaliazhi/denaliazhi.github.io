@@ -28,6 +28,26 @@ export default function Orbitl() {
             { field: "Tools", value: "Figma, WordPress" },
           ]}
         />
+
+        <ProjectQuote
+          img={{
+            src: "design-projects/orbitl-website/shree-headshot.png",
+            alt: "Headshot of Shree Patel",
+          }}
+          title={["Shree", "Co-founder"]}
+          quote={
+            <p>
+              Denalia is fantastic at explaining her design process. It's
+              reassuring to know that we're working with someone who cares so
+              deeply about what we're building. We felt like she could read our
+              minds. She was able to take our vision— how we wanted to inspire
+              people— and turn it into something tangible that even inspires us
+              when we look at it.
+            </p>
+          }
+        />
+
+        <hr />
         <ProjectSection section="Overview" title={project.title}>
           <p>
             Orbitl is an AI-native startup on a mission to fix the tedium and

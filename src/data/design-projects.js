@@ -20,7 +20,7 @@ const design_projects = {
   funn_website: {
     title: "Encouraging educational play",
     subtitle: "A colorful showcase for an indie mobile games studio",
-    client: "FuNn Interactive",
+    client: "Funn Interactive",
     img: {
       src: "/design-projects/funn-website/spell-crush-demo.gif",
       alt: "Cover of game studio website",
