@@ -42,7 +42,10 @@ export default function FunnWebsite() {
         </ProjectSection>
         <hr />
         <ProjectSection section="Timeline">
-          <p>The timeline for the initial landing page was just one week.</p>
+          <p>
+            The timeline for the website redesign and development was just one
+            week.
+          </p>
           <ProjectTimeline
             contents={[
               {
@@ -94,7 +97,7 @@ export default function FunnWebsite() {
           title="Keeping Color, Adding Clarity"
         >
           <p>
-            An audit of the existing design revealed several opportunities to
+            An audit of the existing design revealed key opportunities to
             improve the user experience, including the following:
           </p>
 
@@ -106,7 +109,7 @@ export default function FunnWebsite() {
                 <>
                   <h3>A need for visual balance</h3>
                   <p>
-                    High-saturation colors and distorted assets induced eye
+                    Highly saturated colors and distorted assets induced eye
                     fatigue and undermined the brand's credibility.
                   </p>
                 </>
@@ -139,7 +142,7 @@ export default function FunnWebsite() {
                 <>
                   <h3>Hidden or ineffective CTAs</h3>
                   <p>
-                    The use of unlabeled linked images for desired actions
+                    The use of linked but unlabeled images for target actions
                     reduced the likelihood of conversions. Moreover, text in all
                     caps created a confrontational rather than inviting feel.
                   </p>
@@ -234,7 +237,7 @@ export default function FunnWebsite() {
             The final page is a vivid and immersive window into its game worlds
             that encourages users to push play.
           </p>
-          <img src="/design-projects/funn-website/spell-crush-demo.gif" />
+          <img src="/design-projects/funn-website/funn-demo.gif" />
         </ProjectSection>
       </article>
       <ProjectNav

@@ -31,8 +31,7 @@ const design_projects = {
       src: "/design-projects/funn-website/funn-bg.png",
     },
     role: "Web Designer",
-    //"Website", "Client", "2026",
-    tags: ["Coming Soon"],
+    tags: ["Website", "Client", "2026"],
     desc: "",
   },
   amenuveve_website: {
