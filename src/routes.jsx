@@ -12,6 +12,7 @@ import AmenuveveWebsite from "./pages/Project-Amenuveve-Website";
 import AmenuveveCatalogue from "./pages/Project-Amenuveve-Catalogue";
 import AdiffGraphics from "./pages/Project-Adiff";
 import AirbnbReport from "./pages/Project-Airbnb";
+import FunnWebsite from "./pages/Project-Funn-Website";
 
 const routes = [
   {
@@ -50,6 +51,10 @@ const routes = [
       {
         path: "/amenuveve-website",
         element: <AmenuveveWebsite />,
+      },
+      {
+        path: "/funn-website",
+        element: <FunnWebsite />,
       },
       {
         path: "/adiff-graphics",

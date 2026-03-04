@@ -20,9 +20,9 @@ const design_projects = {
   funn_website: {
     title: "Encouraging educational play",
     subtitle: "A colorful showcase for an indie mobile games studio",
-    client: "FuNn Interactive",
+    client: "Funn Interactive",
     img: {
-      src: "/design-projects/funn-website/funn-product-mockup.png",
+      src: "/design-projects/funn-website/spell-crush-demo.gif",
       alt: "Cover of game studio website",
       width: "545",
       height: "390",
@@ -31,8 +31,7 @@ const design_projects = {
       src: "/design-projects/funn-website/funn-bg.png",
     },
     role: "Web Designer",
-    //"Website", "Client", "2026",
-    tags: ["Coming Soon"],
+    tags: ["Website", "Client", "2026"],
     desc: "",
   },
   amenuveve_website: {

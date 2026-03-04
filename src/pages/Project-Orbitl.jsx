@@ -28,6 +28,26 @@ export default function Orbitl() {
             { field: "Tools", value: "Figma, WordPress" },
           ]}
         />
+
+        <ProjectQuote
+          img={{
+            src: "design-projects/orbitl-website/shree-headshot.png",
+            alt: "Headshot of Shree Patel",
+          }}
+          title={["Shree", "Co-founder"]}
+          quote={
+            <p>
+              Denalia is fantastic at explaining her design process. It's
+              reassuring to know that we're working with someone who cares so
+              deeply about what we're building. We felt like she could read our
+              minds. She was able to take our vision— how we wanted to inspire
+              people— and turn it into something tangible that even inspires us
+              when we look at it.
+            </p>
+          }
+        />
+
+        <hr />
         <ProjectSection section="Overview" title={project.title}>
           <p>
             Orbitl is an AI-native startup on a mission to fix the tedium and
@@ -203,28 +223,22 @@ export default function Orbitl() {
           />
         </ProjectSection>
         <hr />
-        <ProjectSection section="Website demo" title="Pitching the product">
+        <ProjectSection section="The Website" title="Pitching the product">
           <p>
             The final page positions Orbitl as an innovative solution to a
             longstanding problem in science. Its layout mirrors a classic pitch
             so that investors can easily identify the product's core features
-            and the competency of its founding team. Beyond these practical
-            points, its aspirational branding aims to connect more deeply with
-            the scientific community and garner excitement about the future of
+            and the competency of its founding team. Beyond this practicality,
+            its aspirational branding aims to connect more deeply with the
+            scientific community and garner excitement about the future of
             research.
           </p>
-          <ImageCaption
-            imageStyle="modern"
-            image={{
-              src: "/design-projects/orbitl-website/orbitl-demo.png",
-              caption: "Blah",
-            }}
-          />
-          <p>
+          <img src="/design-projects/orbitl-website/orbitl-demo.png" />
+          {/* <p>
             I've continued to work on the website since its first launch. You
             can view the latest design here:
           </p>
-          <a href="https://orbitl.info">Visit the live website</a>
+          <a href="https://orbitl.info">Visit the live website</a> */}
         </ProjectSection>
       </article>
       <ProjectNav
@@ -235,9 +249,7 @@ export default function Orbitl() {
           "Challenge",
           "Messaging",
           "Visuals",
-          "Website Demo",
-          "Summary",
-          // "Testimonial",
+          "The Website",
         ]}
         articleRef={articleRef}
       />
