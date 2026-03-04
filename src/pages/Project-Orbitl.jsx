@@ -223,22 +223,22 @@ export default function Orbitl() {
           />
         </ProjectSection>
         <hr />
-        <ProjectSection section="Website demo" title="Pitching the product">
+        <ProjectSection section="The Website" title="Pitching the product">
           <p>
             The final page positions Orbitl as an innovative solution to a
             longstanding problem in science. Its layout mirrors a classic pitch
             so that investors can easily identify the product's core features
-            and the competency of its founding team. Beyond these practical
-            points, its aspirational branding aims to connect more deeply with
-            the scientific community and garner excitement about the future of
+            and the competency of its founding team. Beyond this practicality,
+            its aspirational branding aims to connect more deeply with the
+            scientific community and garner excitement about the future of
             research.
           </p>
           <img src="/design-projects/orbitl-website/orbitl-demo.png" />
-          <p>
+          {/* <p>
             I've continued to work on the website since its first launch. You
             can view the latest design here:
           </p>
-          <a href="https://orbitl.info">Visit the live website</a>
+          <a href="https://orbitl.info">Visit the live website</a> */}
         </ProjectSection>
       </article>
       <ProjectNav
@@ -249,9 +249,7 @@ export default function Orbitl() {
           "Challenge",
           "Messaging",
           "Visuals",
-          "Website Demo",
-          "Summary",
-          // "Testimonial",
+          "The Website",
         ]}
         articleRef={articleRef}
       />
