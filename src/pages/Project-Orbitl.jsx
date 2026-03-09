@@ -23,9 +23,9 @@ export default function Orbitl() {
           }}
           metadata={[
             { field: "Type", value: "Freelance" },
-            { field: "Role", value: "Web Designer" },
+            { field: "Role", value: "Product Designer" },
             { field: "Timeline", value: "Nov 2025 - Present" },
-            { field: "Tools", value: "Figma, WordPress" },
+            { field: "Tools", value: "Figma, Canva, WordPress" },
           ]}
         />
 
@@ -40,9 +40,9 @@ export default function Orbitl() {
               Denalia is fantastic at explaining her design process. It's
               reassuring to know that we're working with someone who cares so
               deeply about what we're building. We felt like she could read our
-              minds. She was able to take our vision— how we wanted to inspire
-              people— and turn it into something tangible that even inspires us
-              when we look at it.
+              minds. She took our vision— how we wanted to inspire people— and
+              turned it into something tangible that inspires even us when we
+              look at it.
             </p>
           }
         />
@@ -211,8 +211,7 @@ export default function Orbitl() {
             <span className="bold">
               knowledge, curiosity, exploration, and discovery
             </span>
-            . A dark green was selected as the primary color for Orbitl's logo
-            and CTAs to differentiate it from competitors.
+            .
           </p>
           <ImageCaption
             imageStyle="modern"
@@ -223,33 +222,91 @@ export default function Orbitl() {
           />
         </ProjectSection>
         <hr />
-        <ProjectSection section="The Website" title="Pitching the product">
+        <ProjectSection section="Evolution" title="Adapting to shifting needs">
           <p>
-            The final page positions Orbitl as an innovative solution to a
+            After one week, an early version of the website was published with a
+            waitlist sign up screen and a password-protected home page in order
+            to collect leads and build interest in Orbitl while limiting the
+            information exposed to competitors. I have since continued to work
+            with its founders to refine its branding and content.
+          </p>
+          <img
+            src="/design-projects/orbitl-website/orbitl-mockup-versions.png"
+            alt="Mockups of website"
+          />
+        </ProjectSection>
+        <hr />
+        <ProjectSection section="Demo" title="Pitching beyond a product">
+          <p>
+            The website positions Orbitl as an innovative solution to a
             longstanding problem in science. Its layout mirrors a classic pitch
             so that investors can easily identify the product's core features
             and the competency of its founding team. Beyond this practicality,
-            its aspirational branding aims to connect more deeply with the
-            scientific community and garner excitement about the future of
-            research.
+            its aspirational branding connects more deeply with the scientific
+            community and garners excitement about the future of research.
           </p>
-          <img src="/design-projects/orbitl-website/orbitl-demo.png" />
+          <img src="/design-projects/orbitl-website/orbitl-mockup.png" />
           {/* <p>
             I've continued to work on the website since its first launch. You
             can view the latest design here:
           </p>
           <a href="https://orbitl.info">Visit the live website</a> */}
         </ProjectSection>
+        <hr />
+        <ProjectSection section="Pitch Deck" title="Unifying the brand">
+          <p>
+            In addition to its website, I redesigned Orbitl's pitch deck to
+            establish consistency across channels.
+          </p>
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              height: 0,
+              paddingTop: "56.2500%",
+              paddingBottom: 0,
+              boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+              marginTop: "1.6em",
+              marginBottom: "0.9em",
+              overflow: "hidden",
+              borderRadius: "8px",
+              willChange: "transform",
+            }}
+          >
+            <iframe
+              loading="lazy"
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                top: 0,
+                left: 0,
+                border: "none",
+                padding: 0,
+                margin: 0,
+              }}
+              src="https://www.canva.com/design/DAG-QGHBzm4/KkAvqN2qb_f-rf8YUNXv5A/view?embed"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+        </ProjectSection>
       </article>
       <ProjectNav
         anchorBase="orbitl"
         sections={[
-          "Overview",
-          "Timeline",
-          "Challenge",
-          "Messaging",
-          "Visuals",
-          "The Website",
+          [
+            "The Website",
+            [
+              "Overview",
+              "Timeline",
+              "Challenge",
+              "Messaging",
+              "Visuals",
+              "Evolution",
+              "Demo",
+            ],
+          ],
+          "Pitch Deck",
         ]}
         articleRef={articleRef}
       />
