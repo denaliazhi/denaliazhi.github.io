@@ -195,8 +195,7 @@ export default function FunnWebsite() {
         <ProjectSection section="Visuals" title="Preserving a playful spirit">
           <p>
             I pared down the colors of the website into a palette that
-            represented both the studio's logo and its games, which was then
-            applied consistently across the website. The palette balanced
+            complemented both the studio's logo and its games. It balanced
             vibrant hues with muted pastels for a look that was exciting yet not
             overwhelming.
           </p>
@@ -208,12 +207,11 @@ export default function FunnWebsite() {
             }}
           />
           <p>
-            Initially, the client considered both a dark and a light theme for
-            the website, representing Gemorize and Spell Crush, respectively. I
-            create mockups in order to visualize these options, working with the
-            client to steer the direction of the design into its final form.
-            Ultimately, a light theme better fit the studio's mission and
-            redesign goals.
+            Initially, we considered both dark and light themes for the website
+            to represent Gemorize and Spell Crush, respectively. I worked with
+            the client to steer the direction of the design into its final form.
+            Ultimately, we agreed that a light theme better fit the studio's
+            mission and redesign goals.
           </p>
           <ImageCaption
             imageStyle="modern"
@@ -227,11 +225,11 @@ export default function FunnWebsite() {
         <ProjectSection section="The Website" title="Putting it together">
           <p>
             The studio was inspired by the creators of the hit game Candy Crush
-            and wanted a colorful and content-packed website similar to
-            King.com. The redesign for Funn Interactive would honor this
-            original inspiration, featuring full-page visuals and animated
-            elements, while applying best practices to improve the user
-            experience.{" "}
+            and wanted a colorful and content-packed website similar to{" "}
+            <a href="https://www.king.com/">King.com</a>. The redesign for Funn
+            Interactive would honor this original inspiration, featuring
+            full-page visuals and animated elements, while applying best
+            practices to improve the user experience.{" "}
           </p>
           <p>
             The final page is a vivid and immersive window into its game worlds

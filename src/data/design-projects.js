@@ -14,7 +14,7 @@ const design_projects = {
       src: "/design-projects/orbitl-website/orbitl-bg.png",
     },
     role: "Web Designer",
-    tags: ["Website", "Client", "2026"],
+    tags: ["Website", "Pitch Deck", "Client", "2026"],
     desc: "",
   },
   funn_website: {
