@@ -14,7 +14,7 @@ const design_projects = {
       src: "/design-projects/orbitl-website/orbitl-bg.png",
     },
     role: "Web Designer",
-    tags: ["Website", "Pitch Deck", "Client", "2026"],
+    tags: ["Client", "Website", "Pitch Deck"],
     desc: "",
   },
   funn_website: {
@@ -31,7 +31,7 @@ const design_projects = {
       src: "/design-projects/funn-website/funn-bg.png",
     },
     role: "Web Designer",
-    tags: ["Website", "Client", "2026"],
+    tags: ["Client", "Website"],
     desc: "",
   },
   amenuveve_website: {
@@ -49,7 +49,7 @@ const design_projects = {
       src: "/design-projects/amenuveve-website/amenuveve-bg.png",
     },
     role: "Web Designer",
-    tags: ["Website", "Concept", "2025"],
+    tags: ["Concept", "Website"],
     desc: "",
   },
   // adiff_graphics: {
