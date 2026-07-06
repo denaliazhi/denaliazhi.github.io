@@ -6,13 +6,13 @@ export default function Hero({ selected }) {
   let desc;
   switch (location) {
     case "/":
-      desc = "is a developer who enjoys crafting delightful experiences";
+      desc = "develops tools for learning and play";
       break;
     case "/design":
-      desc = "is a designer who helps brands tell memorable stories";
+      desc = "designs physical goods and digital experiences";
       break;
     case "/dabbles":
-      desc = "is a dabbler in animation and the digital arts";
+      desc = "dabbles in animation and other arts";
       break;
   }
   return (

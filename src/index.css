@@ -621,6 +621,32 @@ a.wip:hover {
   gap: 1.5rem;
 }
 
+.design-projects-2 {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.design-projects-2 > a > div {
+  max-width: calc(68.5rem / 2);
+  max-height: calc(68.5rem / 2 * 0.6);
+  border-radius: var(--rounded);
+  overflow: hidden;
+}
+
+.design-projects-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.design-projects-2 img:hover {
+  transform: scale(120%);
+}
+
 .design-card {
   color: white;
   border-radius: var(--rounded);

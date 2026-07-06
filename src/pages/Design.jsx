@@ -1,13 +1,14 @@
 import Hero from "../components/Hero";
 import DesignCard from "../components/Design-Card";
-import { design_projects } from "../data/design-projects";
+// import { design_projects } from "../data/design-projects";
+import { design_projects } from "../data/design-projects-2";
 
 export default function Design() {
   const projects = design_projects;
   return (
     <main className="home design">
       <Hero />
-      <section className="design-projects">
+      {/* <section className="design-projects">
         {Object.entries(projects).map(([key, value]) => (
           <a key={key} href={`/${key.replace("_", "-")}`}>
             <DesignCard
@@ -18,6 +19,15 @@ export default function Design() {
               subtitle={value.subtitle}
               tags={value.tags}
             />
+          </a>
+        ))}
+      </section> */}
+      <section className="design-projects-2">
+        {Object.entries(projects).map(([key, value]) => (
+          <a href="#">
+            <div>
+              <img src={`/design-covers/${value.img.name}.png`} alt="" />
+            </div>
           </a>
         ))}
       </section>

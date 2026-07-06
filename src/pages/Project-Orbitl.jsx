@@ -226,9 +226,9 @@ export default function Orbitl() {
           <p>
             After one week, an early version of the website was published with a
             waitlist sign up screen and a password-protected home page in order
-            to collect leads and build interest in Orbitl while limiting the
-            information exposed to competitors. I have since continued to work
-            with its founders to refine its branding and content.
+            to collect leads for Orbitl while limiting the information it
+            exposed to competitors. I have since continued to align its branding
+            and website content with the latest state of the product.
           </p>
           <img
             src="/design-projects/orbitl-website/orbitl-mockup-versions.png"
@@ -240,17 +240,12 @@ export default function Orbitl() {
           <p>
             The website positions Orbitl as an innovative solution to a
             longstanding problem in science. Its layout mirrors a classic pitch
-            so that investors can easily identify the product's core features
-            and the competency of its founding team. Beyond this practicality,
-            its aspirational branding connects more deeply with the scientific
-            community and garners excitement about the future of research.
+            so that investors can easily recognize the product's core features
+            and the competency of its founding team. Beyond practicality, its
+            aspirational branding appeals personally to the scientific community
+            and garners excitement about the future of research.
           </p>
           <img src="/design-projects/orbitl-website/orbitl-mockup.png" />
-          {/* <p>
-            I've continued to work on the website since its first launch. You
-            can view the latest design here:
-          </p>
-          <a href="https://orbitl.info">Visit the live website</a> */}
         </ProjectSection>
         <hr />
         <ProjectSection section="Pitch Deck" title="Unifying the brand">
