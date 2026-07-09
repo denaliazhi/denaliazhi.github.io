@@ -24,9 +24,12 @@ export default function Design() {
       </section> */}
       <section className="design-projects-2">
         {Object.entries(projects).map(([key, value]) => (
-          <a href="#">
+          <a href={`/${key.replaceAll("_", "-")}`}>
             <div>
-              <img src={`/design-covers/${value.img.name}.png`} alt="" />
+              <img
+                src={`/design-covers/${value.images[0].name}.png`}
+                alt={value.images[0].alt}
+              />
             </div>
           </a>
         ))}

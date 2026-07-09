@@ -1,5 +1,5 @@
 import { design_projects } from "../data/design-projects";
-import ProjectHeader2 from "../components/Project-Header-2";
+import ProjectHeader3 from "../components/Project-Header-3";
 import ProjectNav from "../components/Project-Nav";
 import ProjectSection from "../components/Project-Section";
 import ProjectTimeline from "../components/Project-Timeline";
@@ -8,17 +8,18 @@ import ImageCaption from "../components/Image-Caption";
 import { useRef } from "react";
 
 export default function Orbitl() {
-  const project = design_projects.orbitl_website;
+  const project = design_projects.orbitl;
   const articleRef = useRef(null);
 
   return (
     <main className="project-page orbitl-website design-project">
       <article ref={articleRef}>
-        <ProjectHeader2
+        <ProjectHeader3
           title={project.client}
+          subhead="Branding"
           desc={project.subtitle}
           img={{
-            src: "/design-projects/orbitl-website/orbitl-hero-img.png",
+            src: "/design-covers/Orbitl.png",
             alt: "Laptop and mobile view",
           }}
           metadata={[

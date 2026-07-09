@@ -1,5 +1,5 @@
 const design_projects = {
-  orbitl_website: {
+  orbitl: {
     title: "Reshaping the future of research",
     subtitle:
       "A clean launch for a research management startup built by scientists for their peers",

@@ -1,22 +1,26 @@
 // Header for design project write-ups
 
-export default function ProjectHeader2({ title, desc, img, metadata }) {
+export default function ProjectHeader2({ title, subhead, desc, tags }) {
   return (
     <section className="design-project-header">
       <a href="/design">
         <p>&lt; Back</p>
       </a>
-      <h1>{title}</h1>
-      <p>{desc}</p>
-      <img src={img.src} alt={img.alt} width="672" height="350" />
-      <div className="design-project-metadata">
-        {metadata.map((item) => (
-          <div>
-            <h2>{item.field.toUpperCase()}</h2>
-            <p>{item.value}</p>
-          </div>
+
+      <h1>
+        {title} / {subhead && <span className="design-subhead">{subhead}</span>}
+      </h1>
+      <ul>
+        {desc.map((line) => (
+          <li>{line}</li>
         ))}
-      </div>
+      </ul>
+      <h2>Skills & Tools</h2>
+      <ul className="tags">
+        {tags.map((tg) => (
+          <li>{tg}</li>
+        ))}
+      </ul>
     </section>
   );
 }

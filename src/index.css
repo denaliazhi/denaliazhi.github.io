@@ -626,6 +626,8 @@ a.wip:hover {
   max-width: 70rem;
   margin: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
@@ -716,6 +718,27 @@ a.wip:hover {
 }
 
 /* -- Design project details -- */
+
+.design-project {
+  max-width: 60rem;
+}
+
+.design-project h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.design-subhead {
+  font-weight: 300;
+}
+
+.design-project ul:first-of-type {
+  padding-left: 1.5rem;
+}
+
+.design-project .tags > li {
+  padding: 0.4rem 1rem;
+}
 
 .design-project h2 {
   font-family: var(--sans-serif);
@@ -1106,10 +1129,13 @@ a.wip:hover {
 /* --------------- Project Page --------------- */
 
 .project-page {
-  margin-top: 1rem;
   flex-direction: row;
   gap: 1.5rem;
   justify-content: center;
+}
+
+.project-page .project-header div {
+  margin-top: 2rem;
 }
 
 .project-page p,
@@ -1163,8 +1189,7 @@ a.wip:hover {
 }
 
 .project-page article {
-  width: 65%;
-  max-width: 90rem;
+  max-width: 55rem;
 
   display: flex;
   flex-direction: column;

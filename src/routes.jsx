@@ -13,6 +13,13 @@ import AmenuveveCatalogue from "./pages/Project-Amenuveve-Catalogue";
 import AdiffGraphics from "./pages/Project-Adiff";
 import AirbnbReport from "./pages/Project-Airbnb";
 import FunnWebsite from "./pages/Project-Funn-Website";
+import LumiBags from "./pages/Project-Lumi-Bags";
+import LumiTrifold from "./pages/Project-Lumi-Trifold";
+import TD from "./pages/Project-TD";
+import AB from "./pages/Project-AB";
+import ISC from "./pages/Project-ISC";
+import PNC from "./pages/Project-PNC";
+import USAA from "./pages/Project-USAA";
 
 const routes = [
   {
@@ -45,7 +52,7 @@ const routes = [
         element: <HaikuHunt />,
       },
       {
-        path: "/orbitl-website",
+        path: "/orbitl",
         element: <Orbitl />,
       },
       {
@@ -71,6 +78,34 @@ const routes = [
       {
         path: "/the-odin-project",
         element: <OdinProject />,
+      },
+      {
+        path: "/lumi-bags",
+        element: <LumiBags />,
+      },
+      {
+        path: "/lumi-trifold",
+        element: <LumiTrifold />,
+      },
+      {
+        path: "/td-bank",
+        element: <TD />,
+      },
+      {
+        path: "/associated-bank",
+        element: <AB />,
+      },
+      {
+        path: "/island-service-company",
+        element: <ISC />,
+      },
+      {
+        path: "/pnc-bank",
+        element: <PNC />,
+      },
+      {
+        path: "/usaa",
+        element: <USAA />,
       },
     ],
   },
