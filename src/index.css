@@ -1821,6 +1821,7 @@ td ul li::marker {
     columns: 2;
   }
 
+  .design-project,
   .project-page article {
     width: 85%;
   }
@@ -2021,16 +2022,30 @@ td ul li::marker {
     flex-direction: column;
   }
 
+  .design-project,
   .project-page {
     margin-top: 15%;
+  }
+
+  .design-project {
+    gap: 1.5rem;
   }
 
   .project-page article {
     max-width: 100%;
   }
 
+  .design-project h1,
   .project-page h1 {
     font-size: 2rem;
+  }
+
+  .design-project h2 {
+    margin-bottom: -0.5rem;
+  }
+
+  .design-project ul:first-of-type {
+    padding: 0 0 0 1rem;
   }
 
   .project-page ol {
